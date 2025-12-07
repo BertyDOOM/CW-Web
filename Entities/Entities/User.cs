@@ -1,0 +1,21 @@
+﻿using Entities.BaseEntities;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
+
+namespace Entities.Entities
+{
+    public class User : IdentityUser<int>, IBaseUser
+    {
+        public int Coins { get; set; } = 11000;
+        public int Points { get; set; } = 0;
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime? UpdatedAt { get; set; }
+        //SquadId
+        //FavTeamId
+    }
+}

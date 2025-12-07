@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Data\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5826D3E2-35D1-3394-E8AD-3768DEE232D8}|..\\Application\\Application.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\application\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{968BCC52-A992-C035-E67E-050C7F1A82B5}|..\\Entities\\Entities.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\entities\\entities.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED997C34-6954-474C-8B9B-0789FAB1E543}|CW Fantasy App\\Data.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\data\\cw fantasy app\\data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{ED997C34-6954-474C-8B9B-0789FAB1E543}|CW Fantasy App\\Data.csproj|solutionrelative:cw fantasy app\\data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5826D3E2-35D1-3394-E8AD-3768DEE232D8}|..\\Application\\Application.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\application\\application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED997C34-6954-474C-8B9B-0789FAB1E543}|CW Fantasy App\\Data.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\data\\cw fantasy app\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED997C34-6954-474C-8B9B-0789FAB1E543}|CW Fantasy App\\Data.csproj|solutionrelative:cw fantasy app\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{968BCC52-A992-C035-E67E-050C7F1A82B5}|..\\Entities\\Entities.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\entities\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Entities",
+              "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Entities\\Entities.csproj",
+              "RelativeDocumentMoniker": "..\\Entities\\Entities.csproj",
+              "ToolTip": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Entities\\Entities.csproj",
+              "RelativeToolTip": "..\\Entities\\Entities.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-07T17:18:31.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Program.cs",
+              "ToolTip": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Program.cs",
+              "RelativeToolTip": "..\\Application\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T17:14:11.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Data\\CW Fantasy App\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "CW Fantasy App\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Data\\CW Fantasy App\\ApplicationDbContext.cs",
+              "RelativeToolTip": "CW Fantasy App\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T16:56:43.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Application",
+              "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Application.csproj",
+              "RelativeDocumentMoniker": "..\\Application\\Application.csproj",
+              "ToolTip": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Application.csproj",
+              "RelativeToolTip": "..\\Application\\Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-07T17:01:26.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Data",
+              "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Data\\CW Fantasy App\\Data.csproj",
+              "RelativeDocumentMoniker": "CW Fantasy App\\Data.csproj",
+              "ToolTip": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Data\\CW Fantasy App\\Data.csproj",
+              "RelativeToolTip": "CW Fantasy App\\Data.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-07T17:00:53.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Entities\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "..\\Entities\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Entities\\Entities\\User.cs",
+              "RelativeToolTip": "..\\Entities\\Entities\\User.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T17:00:48.704Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
