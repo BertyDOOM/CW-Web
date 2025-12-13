@@ -1,4 +1,4 @@
-﻿using Entities.BaseEntities;
+﻿using CW_Fantasy_App.Entities.BaseEntities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 
-namespace Entities.Entities
+namespace CW_Fantasy_App.Entities.Entities
 {
     public class User : IdentityUser<int>, IBaseUser
     {

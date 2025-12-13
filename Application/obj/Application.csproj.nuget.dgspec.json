@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Data\\CW Fantasy App\\Data.csproj": {
-                "projectPath": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Data\\CW Fantasy App\\Data.csproj"
+              "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Data\\CW-Fantasy-App\\Data.csproj": {
+                "projectPath": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Data\\CW-Fantasy-App\\Data.csproj"
               },
               "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Entities\\Entities.csproj": {
                 "projectPath": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Entities\\Entities.csproj"
@@ -64,7 +64,27 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[8.0.0, )"
             }
@@ -92,14 +112,14 @@
         }
       }
     },
-    "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Data\\CW Fantasy App\\Data.csproj": {
+    "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Data\\CW-Fantasy-App\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Data\\CW Fantasy App\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Data\\CW-Fantasy-App\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Data\\CW Fantasy App\\Data.csproj",
+        "projectPath": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Data\\CW-Fantasy-App\\Data.csproj",
         "packagesPath": "C:\\Users\\Bertan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Data\\CW Fantasy App\\obj\\",
+        "outputPath": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Data\\CW-Fantasy-App\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -146,7 +166,21 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[8.0.0, )"
             }
@@ -221,7 +255,21 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[8.0.0, )"
             }
@@ -296,7 +344,21 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[8.0.0, )"
             }
