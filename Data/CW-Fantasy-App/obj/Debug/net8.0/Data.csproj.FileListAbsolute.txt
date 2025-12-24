@@ -1,0 +1,36 @@
+C:\Users\Bertan\source\repos\CW-Web\Data\CW Fantasy App\bin\Debug\net8.0\Data.deps.json
+C:\Users\Bertan\source\repos\CW-Web\Data\CW Fantasy App\bin\Debug\net8.0\Data.runtimeconfig.json
+C:\Users\Bertan\source\repos\CW-Web\Data\CW Fantasy App\bin\Debug\net8.0\Data.dll
+C:\Users\Bertan\source\repos\CW-Web\Data\CW Fantasy App\bin\Debug\net8.0\Data.pdb
+C:\Users\Bertan\source\repos\CW-Web\Data\CW Fantasy App\bin\Debug\net8.0\Entities.dll
+C:\Users\Bertan\source\repos\CW-Web\Data\CW Fantasy App\bin\Debug\net8.0\Entities.pdb
+C:\Users\Bertan\source\repos\CW-Web\Data\CW Fantasy App\obj\Debug\net8.0\Data.csproj.AssemblyReference.cache
+C:\Users\Bertan\source\repos\CW-Web\Data\CW Fantasy App\obj\Debug\net8.0\Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bertan\source\repos\CW-Web\Data\CW Fantasy App\obj\Debug\net8.0\Data.AssemblyInfoInputs.cache
+C:\Users\Bertan\source\repos\CW-Web\Data\CW Fantasy App\obj\Debug\net8.0\Data.AssemblyInfo.cs
+C:\Users\Bertan\source\repos\CW-Web\Data\CW Fantasy App\obj\Debug\net8.0\Data.csproj.CoreCompileInputs.cache
+C:\Users\Bertan\source\repos\CW-Web\Data\CW Fantasy App\obj\Debug\net8.0\Data.sourcelink.json
+C:\Users\Bertan\source\repos\CW-Web\Data\CW Fantasy App\obj\Debug\net8.0\Data.csproj.Up2Date
+C:\Users\Bertan\source\repos\CW-Web\Data\CW Fantasy App\obj\Debug\net8.0\Data.dll
+C:\Users\Bertan\source\repos\CW-Web\Data\CW Fantasy App\obj\Debug\net8.0\refint\Data.dll
+C:\Users\Bertan\source\repos\CW-Web\Data\CW Fantasy App\obj\Debug\net8.0\Data.pdb
+C:\Users\Bertan\source\repos\CW-Web\Data\CW Fantasy App\obj\Debug\net8.0\Data.genruntimeconfig.cache
+C:\Users\Bertan\source\repos\CW-Web\Data\CW Fantasy App\obj\Debug\net8.0\ref\Data.dll
+C:\Users\Bertan\source\repos\CW-Web\Data\CW-Fantasy-App\obj\Debug\net8.0\Data.csproj.AssemblyReference.cache
+C:\Users\Bertan\source\repos\CW-Web\Data\CW-Fantasy-App\obj\Debug\net8.0\Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bertan\source\repos\CW-Web\Data\CW-Fantasy-App\obj\Debug\net8.0\Data.AssemblyInfoInputs.cache
+C:\Users\Bertan\source\repos\CW-Web\Data\CW-Fantasy-App\obj\Debug\net8.0\Data.AssemblyInfo.cs
+C:\Users\Bertan\source\repos\CW-Web\Data\CW-Fantasy-App\obj\Debug\net8.0\Data.csproj.CoreCompileInputs.cache
+C:\Users\Bertan\source\repos\CW-Web\Data\CW-Fantasy-App\obj\Debug\net8.0\Data.sourcelink.json
+C:\Users\Bertan\source\repos\CW-Web\Data\CW-Fantasy-App\obj\Debug\net8.0\Data.dll
+C:\Users\Bertan\source\repos\CW-Web\Data\CW-Fantasy-App\obj\Debug\net8.0\refint\Data.dll
+C:\Users\Bertan\source\repos\CW-Web\Data\CW-Fantasy-App\obj\Debug\net8.0\Data.pdb
+C:\Users\Bertan\source\repos\CW-Web\Data\CW-Fantasy-App\bin\Debug\net8.0\Data.deps.json
+C:\Users\Bertan\source\repos\CW-Web\Data\CW-Fantasy-App\bin\Debug\net8.0\Data.runtimeconfig.json
+C:\Users\Bertan\source\repos\CW-Web\Data\CW-Fantasy-App\bin\Debug\net8.0\Data.dll
+C:\Users\Bertan\source\repos\CW-Web\Data\CW-Fantasy-App\bin\Debug\net8.0\Data.pdb
+C:\Users\Bertan\source\repos\CW-Web\Data\CW-Fantasy-App\bin\Debug\net8.0\Entities.dll
+C:\Users\Bertan\source\repos\CW-Web\Data\CW-Fantasy-App\bin\Debug\net8.0\Entities.pdb
+C:\Users\Bertan\source\repos\CW-Web\Data\CW-Fantasy-App\obj\Debug\net8.0\Data.csproj.Up2Date
+C:\Users\Bertan\source\repos\CW-Web\Data\CW-Fantasy-App\obj\Debug\net8.0\Data.genruntimeconfig.cache
+C:\Users\Bertan\source\repos\CW-Web\Data\CW-Fantasy-App\obj\Debug\net8.0\ref\Data.dll

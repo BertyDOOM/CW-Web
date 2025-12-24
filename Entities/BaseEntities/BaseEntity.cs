@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entities.BaseEntities
+namespace CW_Fantasy_App.Entities.BaseEntities
 {
     class BaseEntity
     {

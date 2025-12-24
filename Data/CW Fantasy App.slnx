@@ -2,5 +2,5 @@
   <Project Path="../Application/Application.csproj" />
   <Project Path="../Entities/Entities.csproj" />
   <Project Path="../Services/Services.csproj" />
-  <Project Path="CW Fantasy App/Data.csproj" />
+  <Project Path="CW-Fantasy-App/Data.csproj" />
 </Solution>
