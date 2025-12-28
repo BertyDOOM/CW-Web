@@ -1,0 +1,23 @@
+DONE Arsenal	57
+DONE Aston Villa	58
+DONE Bournemouth	1044
+DONE Brentford	402
+DONE Brighton	397
+DONE Chelsea	61
+DONE Crystal Palace	354
+DONE Everton	62
+DONE Fulham	63
+---- Ipswich Town	349
+DONE Liverpool	64
+DONE Manchester City	65
+DONE Manchester United	66
+DONE Newcastle United	67
+DONE Nottingham Forest	351
+---- Southampton	340
+DONE Tottenham	73
+DONE West Ham	563
+DONE Wolves (Wolverhampton)	76
+---- Leicester City	338
+Leeds United	341
+Burnley	328
+---- Sunderland manualy :(

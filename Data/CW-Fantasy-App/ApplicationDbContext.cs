@@ -7,6 +7,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CW_Fantasy_App.Entities.BaseEntities;
+using Entities.FootballModels;
 
 
 namespace CW_Fantasy_App.Data
@@ -17,11 +19,31 @@ namespace CW_Fantasy_App.Data
             : base(options)
         {
         }
-
-        public override int SaveChanges()
+        public DbSet<Club> Clubs { get; set; }
+        public DbSet<Coach> Coaches { get; set; }
+        public DbSet<PlayerTeam> PlayerTeams { get; set; }
+        public DbSet<Player> Players { get; set; }
+        public DbSet<Team> Teams { get; set; }
+        public override async Task<int> SaveChangesAsync(
+        CancellationToken cancellationToken = default)
         {
-            // CreatedAt/UpdatedAt
-            return base.SaveChanges();
+            foreach (var entry in ChangeTracker.Entries<BaseEntity>())
+            {
+                if (entry.State == EntityState.Added)
+                    entry.Entity.CreatedAt = DateTime.UtcNow;
+
+                if (entry.State == EntityState.Modified)
+                    entry.Entity.UpdatedAt = DateTime.UtcNow;
+
+                if (entry.State == EntityState.Deleted)
+                {
+                    entry.State = EntityState.Modified;
+                    entry.Entity.IsDeleted = true;
+                    entry.Entity.DeletedAt = DateTime.UtcNow;
+                }
+            }
+
+            return await base.SaveChangesAsync(cancellationToken);
         }
     }
 }

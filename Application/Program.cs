@@ -2,18 +2,19 @@ using CW_Fantasy_App.Data;
 using CW_Fantasy_App.Entities.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Services;
+using Services.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 
-// Регистрация на DbContext
+// DbContext
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Identity с твоя User клас и Data проект DbContext
+// Identity
 builder.Services.AddIdentity<User, IdentityRole<int>>(options =>
 {
     options.SignIn.RequireConfirmedAccount = false;
@@ -22,16 +23,32 @@ builder.Services.AddIdentity<User, IdentityRole<int>>(options =>
 .AddDefaultTokenProviders()
 .AddDefaultUI();
 
-// Конфигурация на cookie
+// Cookie configuration
 builder.Services.ConfigureApplicationCookie(options =>
 {
     options.LoginPath = "/Account/Login";
     options.AccessDeniedPath = "/Account/AccessDenied";
 });
 
+// HttpClient + FootballDataService
+builder.Services.AddHttpClient<FootballDataService>();
+builder.Services.AddScoped<FootballDataService>();
+
+// FootballDataOptions
+builder.Services.Configure<FootballDataOptions>(
+    builder.Configuration.GetSection("FootballDataOptions"));
+
 var app = builder.Build();
 
-// Middleware pipeline
+// Извикване на FootballDataService
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var footballService = services.GetRequiredService<FootballDataService>();
+    await footballService.GetTeamAsync(328);
+}
+
+// Middleware
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
@@ -40,13 +57,10 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
 app.UseRouting();
-
 app.UseAuthentication();
 app.UseAuthorization();
 
-// Add both Razor Pages and MVC controllers
 app.MapRazorPages();
 app.MapDefaultControllerRoute();
 

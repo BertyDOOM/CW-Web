@@ -15,7 +15,7 @@ namespace CW_Fantasy_App.Entities.Entities
         public int Points { get; set; } = 0;
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public DateTime? UpdatedAt { get; set; }
-        //SquadId
-        //FavTeamId
+        public DateTime? DeletedAt { get; set; }
+        public bool IsDeleted { get; set; }
     }
 }

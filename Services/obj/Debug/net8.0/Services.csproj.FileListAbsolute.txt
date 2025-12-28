@@ -25,3 +25,8 @@ C:\Users\Bertan\source\repos\CW-Web\Services\obj\Debug\net8.0\refint\Services.dl
 C:\Users\Bertan\source\repos\CW-Web\Services\obj\Debug\net8.0\Services.pdb
 C:\Users\Bertan\source\repos\CW-Web\Services\obj\Debug\net8.0\Services.genruntimeconfig.cache
 C:\Users\Bertan\source\repos\CW-Web\Services\obj\Debug\net8.0\ref\Services.dll
+C:\Users\Bertan\source\repos\CW-Web\Services\bin\Debug\net8.0\Data.dll
+C:\Users\Bertan\source\repos\CW-Web\Services\bin\Debug\net8.0\Entities.dll
+C:\Users\Bertan\source\repos\CW-Web\Services\bin\Debug\net8.0\Data.pdb
+C:\Users\Bertan\source\repos\CW-Web\Services\bin\Debug\net8.0\Entities.pdb
+C:\Users\Bertan\source\repos\CW-Web\Services\obj\Debug\net8.0\Services.csproj.Up2Date
