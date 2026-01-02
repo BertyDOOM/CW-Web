@@ -198,6 +198,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Bertan/source/repos/CW-Web/Application/Views/Home/Welcome.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxXZWxjb21lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Bertan/source/repos/CW-Web/Application/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -208,6 +212,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Bertan/source/repos/CW-Web/Application/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bertan/source/repos/CW-Web/Application/Views/Team/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhbVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Bertan/source/repos/CW-Web/Application/Views/_ViewImports.cshtml]

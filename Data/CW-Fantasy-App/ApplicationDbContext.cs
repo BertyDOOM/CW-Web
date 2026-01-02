@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CW_Fantasy_App.Entities.BaseEntities;
-using Entities.FootballModels;
+using Entities.FootballEntities;
 
 
 namespace CW_Fantasy_App.Data
@@ -47,11 +47,8 @@ namespace CW_Fantasy_App.Data
         }
     }
 }
-
-//dotnet ef migrations add 
-//    --project "C:\Users\Bertan\source\repos\CW-Web\Data\CW Fantasy App\Data.csproj"
-//    --startup-project "C:\Users\Bertan\source\repos\CW-Web\Application\Application.csproj"
-//    --output-dir "Migrations"
+//cd C:\Users\Bertan\source\repos\CW-Web\Data\CW-Fantasy-App>
+//dotnet ef migrations add InitializeTest --startup-project "C:\Users\Bertan\source\repos\CW-Web-clean\CW-Web\Application\Application.csproj" --output-dir Migrations
 
 //dotnet ef database update 
 //    --project "C:\Users\Bertan\source\repos\CW-Web\Data\CW Fantasy App\Data.csproj"

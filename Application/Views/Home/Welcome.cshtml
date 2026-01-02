@@ -1,0 +1,11 @@
+﻿@{
+}
+Welcome to FPL<br>
+@if (ViewBag.ShowLogin == true)
+{
+	<a href="/Identity/Account/Register">Register</a><br>
+}
+@if (ViewBag.ShowCreateTeam == true)
+{
+	<a href="/Team/Create">Create Team</a>
+}

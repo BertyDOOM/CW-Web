@@ -18,6 +18,6 @@ DONE Tottenham	73
 DONE West Ham	563
 DONE Wolves (Wolverhampton)	76
 ---- Leicester City	338
-Leeds United	341
-Burnley	328
+DONE Leeds United	341
+DONE Burnley	328
 ---- Sunderland manualy :(

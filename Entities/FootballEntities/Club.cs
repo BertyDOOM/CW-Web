@@ -5,13 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entities.FootballModels
+namespace Entities.FootballEntities
 {
     public class Club : BaseEntity
     {
         public int ApiId { get; set; }
         public string Name { get; set; } = null!;
         public string? CrestUrl { get; set; }
+        public string? KitUrl { get; set; }
         public List<Player> Players { get; set; } = new List<Player>();
         public List<Coach> Coaches { get; set; } = new List<Coach>();
         public List<Team> Teams { get; set; } = new List<Team>();

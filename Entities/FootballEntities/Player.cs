@@ -5,8 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entities.FootballModels
-    {
+namespace Entities.FootballEntities
+{
         public class Player : Person
         {
             public string Position { get; set; }

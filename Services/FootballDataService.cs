@@ -1,6 +1,6 @@
 ﻿using CW_Fantasy_App.Data;
 using CW_Fantasy_App.Services;
-using Entities.FootballModels;
+using Entities.FootballEntities;
 using Services.DTOs;
 using Services;
 using Services.Options;

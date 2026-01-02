@@ -41,12 +41,12 @@ builder.Services.Configure<FootballDataOptions>(
 var app = builder.Build();
 
 // Извикване на FootballDataService
-using (var scope = app.Services.CreateScope())
-{
-    var services = scope.ServiceProvider;
-    var footballService = services.GetRequiredService<FootballDataService>();
-    await footballService.GetTeamAsync(328);
-}
+//using (var scope = app.Services.CreateScope())
+//{
+//    var services = scope.ServiceProvider;
+//    var footballService = services.GetRequiredService<FootballDataService>();
+//    await footballService.GetTeamAsync(328);
+//}
 
 // Middleware
 if (!app.Environment.IsDevelopment())
