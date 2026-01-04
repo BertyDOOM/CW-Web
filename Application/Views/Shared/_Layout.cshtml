@@ -10,44 +10,35 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Application</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
+        <nav class="pl-navbar">
+            <div class="pl-navbar-grid">
+                <div class="pl-logo">
+                    <img src="~/img/Lion logo.png" alt="Logo">
+                </div>
+                <div class="pl-brand-wrap">
+                    <a class="navbar-brand" href="/">Application</a>
+                </div>
 
-                    <!-- Добавяме Login/Register или Logout бутони -->
-                    <ul class="navbar-nav">
-                        @if (User.Identity.IsAuthenticated)
+                <!-- 75%: Навигация и бутони -->
+                <div class="pl-nav-wrap">
+                    <ul class="main-nav">
+                        <li><a class="nav-link" href="/">Home</a></li>
+                        <li><a class="nav-link" href="/Transfer/Market">Market</a></li>
+                        <li><a class="nav-link" href="/Team/Leaderboard">FPL Leaderboard</a></li>
+                    </ul>
+                    <ul class="auth-nav">
+                        @if (User.Identity != null && User.Identity.IsAuthenticated)
                         {
-                            <li class="nav-item">
-                                <form asp-area="Identity" asp-page="/Account/Logout" method="post" class="form-inline">
-                                    <button type="submit" class="btn btn-link nav-link">Logout</button>
-                                </form>
-                            </li>
+                            <form asp-area="Identity" asp-page="/Account/Logout" method="post">
+                                <button type="submit" class="nav-link log-regi">Logout</button>
+                            </form>
                         }
                         else
                         {
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">Register</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login">Login</a>
-                            </li>
+                            <a class="nav-link log-regi" asp-area="Identity" asp-page="/Account/Login">Login</a>
+                            <a class="nav-link log-regi" asp-area="Identity" asp-page="/Account/Register">Register</a>
                         }
                     </ul>
-
                 </div>
             </div>
         </nav>

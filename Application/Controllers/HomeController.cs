@@ -1,6 +1,8 @@
 using Application.Models;
 using CW_Fantasy_App.Data;
 using CW_Fantasy_App.Entities.Entities;
+using Entities.FootballEntities;
+using Entities.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
@@ -34,6 +36,7 @@ public class HomeController : Controller
         var team = _context.Teams
                 .Include(t => t.PlayerTeams)
                     .ThenInclude(pt => pt.Player)
+                        .ThenInclude(p => p.Club)
                 .Include(t => t.Coach)
                 .Include(t => t.FavoriteClub)
                 .FirstOrDefault(t => t.UserId == userId && !t.IsDeleted);
@@ -44,7 +47,21 @@ public class HomeController : Controller
             ViewBag.ShowCreateTeam = true;
             return View("Welcome");
         }
-            return View(); //отбора
+
+        var model = new TeamViewModel
+        {
+            Coach = team.Coach,
+            Players = team.PlayerTeams
+            .Select(pt => new PlayerViewModel
+            {
+                Name = pt.Player.Name,
+                Position = pt.Player.Position,
+                KitUrl = pt.Player.Club.KitUrl
+            })
+        .ToList()
+        };
+
+        return View("Index", model);
     }
 
     public IActionResult Privacy()

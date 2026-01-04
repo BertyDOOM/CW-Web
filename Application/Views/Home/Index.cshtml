@@ -1,8 +1,79 @@
-﻿    @{
-    ViewData["Title"] = "Home Page";
+﻿@model Entities.ViewModels.TeamViewModel
+@{
+    ViewData["Title"] = "My Fantasy Team";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<h2>@Model.Coach.Name</h2>
+
+<div class="team-grid">
+
+    @* Треньор, само ако има *@
+    @if (Model.Coach != null)
+    {
+        <div class="coach">
+            <img src="img/trainee Kit.png" class="coach-kit" />
+            <div class="coach-name">@Model.Coach.Name (@Model.Coach.Nationality)</div>
+        </div>
+    }
+
+    @* Играчите *@
+    @foreach (var player in Model.Players)
+    {
+        <div class="player-card">
+            <img src="@player.KitUrl" alt="@player.Name" class="player-kit" />
+            <div class="player-name">@player.Name</div>
+            <div class="player-position">@player.Position</div>
+        </div>
+    }
 </div>
+
+<style>
+    .team-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 1rem;
+        margin-top: 1rem;
+        align-items: start;
+    }
+
+    /* Играчите */
+    .player-card {
+        text-align: center;
+    }
+
+    .player-kit {
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+        margin-bottom: 0.5rem;
+    }
+
+    /* Треньор */
+    .coach {
+        text-align: center;
+        grid-column: span 2; /* ако искаш треньорът да заема повече място */
+        margin-bottom: 1rem;
+    }
+
+    .coach-kit {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        border-radius: 50%; /* кръгла снимка */
+        margin-bottom: 0.5rem;
+    }
+
+    .coach-name {
+        font-weight: 600;
+        color: #37003C;
+    }
+
+    .player-name {
+        font-weight: 500;
+    }
+
+    .player-position {
+        font-size: 0.85rem;
+        color: gray;
+    }
+</style>
