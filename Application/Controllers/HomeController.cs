@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 using System.Net.Security;
 using System.Security.Claims;
+using System.Text.RegularExpressions;
 
 namespace Application.Controllers;
 
@@ -32,15 +33,21 @@ public class HomeController : Controller
         }
 
         int userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
-
+        var user = _context.Users.FirstOrDefault(u => u.Id == userId);
+        
+        if (user == null)
+        {
+            return RedirectToAction("Welcome");
+        }
         var team = _context.Teams
+                .Include(t => t.FavoriteClub)
+                .Include(t => t.Coach)
                 .Include(t => t.PlayerTeams)
                     .ThenInclude(pt => pt.Player)
                         .ThenInclude(p => p.Club)
-                .Include(t => t.Coach)
-                .Include(t => t.FavoriteClub)
                 .FirstOrDefault(t => t.UserId == userId && !t.IsDeleted);
 
+        
         if (team == null) 
         {
             ViewBag.ShowLogin = false;
@@ -48,20 +55,28 @@ public class HomeController : Controller
             return View("Welcome");
         }
 
-        var model = new TeamViewModel
+        var model = new UserTeamViewModel
         {
+            UserName = user.UserName.Split('@')[0],
+            UserCoins = user.Coins,
+            UserPoints = user.Points,
+            FavoriteClubCrestUrl = team.FavoriteClub?.CrestUrl,
+            FavoriteClubName = team.FavoriteClub?.Name,
+            TeamName = team.Name,
             Coach = team.Coach,
-            Players = team.PlayerTeams
-            .Select(pt => new PlayerViewModel
+            Players = team.PlayerTeams.Select(pt => new PlayerViewModel
             {
                 Name = pt.Player.Name,
                 Position = pt.Player.Position,
-                KitUrl = pt.Player.Club.KitUrl
-            })
-        .ToList()
+                KitUrl = pt.Player.Club?.KitUrl,
+                IsStarter = pt.IsStarter,
+                DateOfBirth =  pt.Player.DateOfBirth,
+
+            }).OrderBy(pt => pt.IsStarter == true) //титул€рите?
+            .ToList()
         };
 
-        return View("Index", model);
+        return View(model);
     }
 
     public IActionResult Privacy()

@@ -1,79 +1,126 @@
-﻿@model Entities.ViewModels.TeamViewModel
+﻿@model Entities.ViewModels.UserTeamViewModel
 @{
     ViewData["Title"] = "My Fantasy Team";
 }
 
-<h2>@Model.Coach.Name</h2>
 
-<div class="team-grid">
-
-    @* Треньор, само ако има *@
-    @if (Model.Coach != null)
-    {
-        <div class="coach">
-            <img src="img/trainee Kit.png" class="coach-kit" />
-            <div class="coach-name">@Model.Coach.Name (@Model.Coach.Nationality)</div>
+    <div class="top-filler">
+    <div class="filler-text-wrap">YOUR TEAM</div>
+	    <div class="filler-effect"></div>
+    </div>
+<div class="home-grid">
+    <div class="grid-div-user">
+        <div class="favorite-club-crest">
+            @if (!string.IsNullOrEmpty(Model.FavoriteClubCrestUrl))
+            {
+                <img src="@Model.FavoriteClubCrestUrl" alt="@Model.FavoriteClubName" />
+            }
+            else
+            {
+                <div class="no-crest">No Club</div>
+            }
         </div>
-    }
-
-    @* Играчите *@
-    @foreach (var player in Model.Players)
-    {
-        <div class="player-card">
-            <img src="@player.KitUrl" alt="@player.Name" class="player-kit" />
-            <div class="player-name">@player.Name</div>
-            <div class="player-position">@player.Position</div>
+        <div>
+			<div class="user-details">
+				<div class="user-name">@Model.TeamName</div>
+				<div class="user-points">@Model.UserPoints <span>points</span></div>
+                <div class="user-points">@Model.UserCoins <span>coins</span></div>
+			</div>
         </div>
-    }
+        
+    </div>
+    <div class="grid-div">a</div>
+    <div class="grid-div">a</div>
 </div>
 
+
 <style>
-    .team-grid {
+    .top-filler {
+		background-color: white;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-        gap: 1rem;
-        margin-top: 1rem;
-        align-items: start;
+        grid-template-columns: 8fr 5fr;
+        height: 100px; 
+        
+    }
+	.filler-text-wrap {
+		font-family: 'Montserrat', sans-serif;
+		padding-left: 20px;
+		font-weight: 700;
+		font-size: 36px;
+		display: grid;
+		align-items: end;
+		color: rgb(55, 0, 60);
+	}
+    .filler-effect {
+        background: linear-gradient( to right, transparent,deepskyblue );
     }
 
-    /* Играчите */
-    .player-card {
-        text-align: center;
+    .home-grid {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr 1fr;
+        gap: 20px;
+        padding: 20px;
+	}
+    .grid-div {
+		background-color: white;
+		border-radius: 10px;  
+		height: 200px;
+    }
+    .grid-div-user 
+    {
+		padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        
     }
 
-    .player-kit {
-        width: 80px;
-        height: 80px;
-        object-fit: contain;
-        margin-bottom: 0.5rem;
-    }
-
-    /* Треньор */
-    .coach {
-        text-align: center;
-        grid-column: span 2; /* ако искаш треньорът да заема повече място */
-        margin-bottom: 1rem;
-    }
-
-    .coach-kit {
+    .favorite-club-crest img {
         width: 100px;
         height: 100px;
-        object-fit: contain;
-        border-radius: 50%; /* кръгла снимка */
-        margin-bottom: 0.5rem;
+        object-fit: contain; /* Фит-ва изображението */
+        border-radius: 4px;
+        border: 2px solid rgb(55,0,60);
     }
 
-    .coach-name {
+    .no-crest {
+        width: 60px;
+        height: 60px;
+        background-color: #ddd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.7rem;
+        color: #666;
+        border-radius: 4px;
+    }
+
+    .user-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 20px;
+    }
+
+    .user-name {
         font-weight: 600;
+        font-size: 1.2rem;
         color: #37003C;
     }
 
-    .player-name {
-        font-weight: 500;
+    .user-points {
+        font-weight: 700;
+        font-size: 1.1rem;
+        color: #00cd84; 
     }
 
-    .player-position {
-        font-size: 0.85rem;
-        color: gray;
+    .user-points span {
+            font-weight: 400;
+        font-size: 0.8rem;
+        color: #888;
+        text-transform: uppercase;
     }
+    /*User Div :(*/
 </style>

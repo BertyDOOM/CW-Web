@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Application.styles.css" asp-append-version="true" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -16,7 +17,7 @@
                     <img src="~/img/Lion logo.png" alt="Logo">
                 </div>
                 <div class="pl-brand-wrap">
-                    <a class="navbar-brand" href="/">Application</a>
+					<a class="navbar-brand" href="/"><small>PREMIER LEAGUE</small><br>Fantasy</a>
                 </div>
 
                 <!-- 75%: Навигация и бутони -->
@@ -44,7 +45,7 @@
         </nav>
     </header>
 
-    <div class="container">
+    <div>
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
