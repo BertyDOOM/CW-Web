@@ -3,11 +3,11 @@
     ViewData["Title"] = "My Fantasy Team";
 }
 
-
-    <div class="top-filler">
+<div class="top-filler">
     <div class="filler-text-wrap">YOUR TEAM</div>
-	    <div class="filler-effect"></div>
-    </div>
+    <div class="filler-effect"></div>
+</div>
+
 <div class="home-grid">
     <div class="grid-div-user">
         <div class="favorite-club-crest">
@@ -21,38 +21,89 @@
             }
         </div>
         <div>
-			<div class="user-details">
-				<div class="user-name">@Model.TeamName</div>
-				<div class="user-points">@Model.UserPoints <span>points</span></div>
+            <div class="user-details">
+                <div class="user-name">@Model.TeamName</div>
+                <div class="user-points">@Model.UserPoints <span>points</span></div>
                 <div class="user-points">@Model.UserCoins <span>coins</span></div>
-			</div>
+            </div>
         </div>
-        
     </div>
-    <div class="grid-div">a</div>
+
+    <div class="grid-div-squad">
+        <div class="pitch">
+
+            <div class="grid-row grid-row-GK">
+                @foreach (var p in Model.StarterPlayers.Where((pl, i) => i == 0))
+                {
+                    <div class="player-card" draggable="true" data-player-id="@p.Id">
+                        <img src="@p.KitUrl" />
+                        <div class="player-name">@p.Name</div>
+                    </div>
+                }
+            </div>
+
+            <div class="grid-row grid-row-Defense">
+                @foreach (var p in Model.StarterPlayers.Where((pl, i) => i >= 1 && i <= 4))
+                {
+                    <div class="player-card" draggable="true" data-player-id="@p.Id">
+                        <img src="@p.KitUrl" />
+                        <div class="player-name">@p.Name</div>
+                    </div>
+                }
+            </div>
+
+            <div class="grid-row grid-row-Midfield">
+                @foreach (var p in Model.StarterPlayers.Where((pl, i) => i >= 5 && i <= 8))
+                {
+                    <div class="player-card" draggable="true" data-player-id="@p.Id">
+                        <img src="@p.KitUrl" />
+                        <div class="player-name">@p.Name</div>
+                    </div>
+                }
+            </div>
+
+            <div class="grid-row grid-row-FW">
+                @foreach (var p in Model.StarterPlayers.Where((pl, i) => i >= 9 && i <= 10))
+                {
+                    <div class="player-card" draggable="true" data-player-id="@p.Id">
+                        <img src="@p.KitUrl" />
+                        <div class="player-name">@p.Name</div>
+                    </div>
+                }
+            </div>
+
+        </div>
+        <div class="bench">
+            <div class="coach-card">
+                <img src="~/img/trainee Kit.png" />
+                <div class="player-name">@Model.Coach.Name</div>
+            </div>
+        </div>
+    </div>
+
     <div class="grid-div">a</div>
 </div>
 
-
 <style>
     .top-filler {
-		background-color: white;
+        background-color: white;
         display: grid;
         grid-template-columns: 8fr 5fr;
-        height: 100px; 
-        
+        height: 100px;
     }
-	.filler-text-wrap {
-		font-family: 'Montserrat', sans-serif;
-		padding-left: 20px;
-		font-weight: 700;
-		font-size: 36px;
-		display: grid;
-		align-items: end;
-		color: rgb(55, 0, 60);
-	}
+
+    .filler-text-wrap {
+        font-family: 'Montserrat', sans-serif;
+        padding-left: 20px;
+        font-weight: 700;
+        font-size: 36px;
+        display: grid;
+        align-items: end;
+        color: rgb(55, 0, 60);
+    }
+
     .filler-effect {
-        background: linear-gradient( to right, transparent,deepskyblue );
+        background: linear-gradient(to right, transparent, deepskyblue);
     }
 
     .home-grid {
@@ -60,27 +111,35 @@
         grid-template-columns: 1fr 1.5fr 1fr;
         gap: 20px;
         padding: 20px;
-	}
-    .grid-div {
-		background-color: white;
-		border-radius: 10px;  
-		height: 200px;
     }
-    .grid-div-user 
-    {
-		padding: 20px;
+
+    .grid-div {
+        background-color: white;
+        border-radius: 10px;
+        height: 200px;
+        padding: 20px;
+    }
+
+    .grid-div-user {
+        padding: 20px;
         background-color: white;
         border-radius: 10px;
         height: 200px;
         display: flex;
         flex-direction: row;
-        
+    }
+
+    .grid-div-squad {
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        height: 770px;
     }
 
     .favorite-club-crest img {
         width: 100px;
         height: 100px;
-        object-fit: contain; /* Фит-ва изображението */
+        object-fit: contain;
         border-radius: 4px;
         border: 2px solid rgb(55,0,60);
     }
@@ -113,14 +172,190 @@
     .user-points {
         font-weight: 700;
         font-size: 1.1rem;
-        color: #00cd84; 
+        color: #00cd84;
     }
 
-    .user-points span {
+        .user-points span {
             font-weight: 400;
-        font-size: 0.8rem;
-        color: #888;
-        text-transform: uppercase;
+            font-size: 0.8rem;
+            color: #888;
+            text-transform: uppercase;
+        }
+
+    /* Pitch arc */
+    .pitch {
+        position: relative;
+        background: url("/img/var 5.png") no-repeat center center;
+        background-size: cover;
+        display: grid;
+        grid-template-rows: 130px 130px 130px 130px;
+        gap: 10px;
+        padding: 10px;
     }
-    /*User Div :(*/
+
+    .bench
+    {
+    background-color: gray;
+    height: 160px;
+    border-radius: 0 0 10px 10px;
+		padding: 20px;
+    }
+
+    .grid-row {
+        display: grid;
+        gap: 10px;
+        height: 130px;
+    }
+
+    .grid-row-GK {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .grid-row-Defense, .grid-row-Midfield {
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+    }
+
+    .grid-row-FW {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        margin: 0px 153px;
+        gap: 50px;
+    }
+
+    .player-card {
+        background-color: #37003C4D;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: grab;
+        transition: transform 0.2s;
+        width: 80px; 
+        height: 125px; 
+        flex-shrink: 0; 
+    }
+
+        .player-card.dragging {
+            opacity: 0.7;
+            transform: scale(1.1);
+            z-index: 10;
+        }
+
+        .player-card img {
+            width: 70px;
+            height: 100px;
+            object-fit: contain;
+            margin-bottom: 0px;
+            user-drag: none;
+            -webkit-user-drag: none;
+            pointer-events: none;
+        }
+
+        .player-name {
+            font-size: 0.8rem;
+            text-align: center;
+            margin-top: 0px;
+            color: white;
+            border-radius: 0 0 6px 6px;
+            background-color: black;
+            font-weight: 500;
+            width: 100%;
+            padding: 2px 0;
+        }
+
+        .coach-card {
+        background-color: darkgray;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: grab;
+        transition: transform 0.2s;
+        width: 80px;
+        height: 125px;
+        flex-shrink: 0;
+    }
+
+        .coach-card img {
+            width: 80px;
+            height: 110px;
+            object-fit: contain;
+            margin-bottom: 0px;
+            user-drag: none;
+            -webkit-user-drag: none;
+            pointer-events: none;
+        }
 </style>
+
+<script>
+    let dragged = null;
+
+    document.addEventListener('dragstart', e => {
+        if (!e.target.classList.contains('player-card')) return;
+        dragged = e.target;
+        dragged.classList.add('dragging');
+    });
+
+    document.addEventListener('dragend', e => {
+        if (!dragged) return;
+        dragged.classList.remove('dragging');
+        dragged = null;
+    });
+
+    document.querySelectorAll('.grid-row').forEach(row => {
+        row.addEventListener('dragover', e => e.preventDefault());
+        row.addEventListener('dragleave', e => row.classList.remove('dragover'));
+
+        row.addEventListener('drop', async e => {
+            e.preventDefault();
+            row.classList.remove('dragover');
+            if (!dragged) return;
+
+            const targetCard = e.target.closest('.player-card');
+
+            if (targetCard && targetCard !== dragged) {
+                const draggedParent = dragged.parentNode;
+                const targetParent = targetCard.parentNode;
+
+                // визуален swap
+                const draggedNext = dragged.nextSibling === targetCard ? dragged : dragged.nextSibling;
+                const targetNext = targetCard.nextSibling === dragged ? targetCard : targetCard.nextSibling;
+
+                targetParent.insertBefore(dragged, targetCard);
+                draggedParent.insertBefore(targetCard, draggedNext);
+
+                // вземаме PlayerId за AJAX
+                const pos1 = parseInt(dragged.dataset.playerId);
+                const pos2 = parseInt(targetCard.dataset.playerId);
+
+                // извикване на контролера за swap в DB
+                try {
+                    const response = await fetch('/Home/SchemePositionChanger', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ pos1, pos2 })
+                    });
+
+                    if (!response.ok) throw new Error('Network error');
+
+                    const data = await response.json();
+                    console.log('DB updated:', data);
+
+                    // актуализираме dataset, ако е нужно
+                    dragged.dataset.playerId = data[0].PlayerId;
+                    targetCard.dataset.playerId = data[1].PlayerId;
+
+                } catch (err) {
+                    console.error('Error updating SchemePosition:', err);
+                    // при грешка може да върнем картите обратно
+                }
+
+            } else {
+                // празно място – просто премести
+                row.appendChild(dragged);
+            }
+        });
+    });
+</script>

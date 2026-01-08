@@ -5,6 +5,7 @@ using Entities.FootballEntities;
 using Entities.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Services.DTOs;
 using System.Diagnostics;
 using System.Net.Security;
 using System.Security.Claims;
@@ -54,6 +55,37 @@ public class HomeController : Controller
             ViewBag.ShowCreateTeam = true;
             return View("Welcome");
         }
+        var starterPlayers = team.PlayerTeams
+    .Where(pt => pt.IsStarter == true)
+    .OrderBy(pt => pt.SchemePosition)
+    .Select(pt => new PlayerViewModel
+    {
+        Id = pt.Player.Id,
+        Name = pt.Player.Name,
+        Position = pt.Player.Position,
+        KitUrl = pt.Player.Club?.KitUrl,
+        SchemePosition = pt.SchemePosition,
+        DateOfBirth = pt.Player.DateOfBirth,
+        IsStarter = pt.IsStarter
+    })
+    .Take(11)
+    .ToList();
+
+
+        var benchPlayers = team.PlayerTeams
+                .Where(pt => pt.IsStarter != true)
+                .OrderBy(pt => pt.Player.Id)
+                .Select(pt => new PlayerViewModel
+                {
+                    Id = pt.Player.Id,
+                    Name = pt.Player.Name,
+                    Position = pt.Player.Position,
+                    SchemePosition = pt.SchemePosition,
+                    KitUrl = pt.Player.Club?.KitUrl,
+                    DateOfBirth = pt.Player.DateOfBirth,
+                    IsStarter = pt.IsStarter
+                })
+                .ToList();
 
         var model = new UserTeamViewModel
         {
@@ -64,19 +96,34 @@ public class HomeController : Controller
             FavoriteClubName = team.FavoriteClub?.Name,
             TeamName = team.Name,
             Coach = team.Coach,
-            Players = team.PlayerTeams.Select(pt => new PlayerViewModel
-            {
-                Name = pt.Player.Name,
-                Position = pt.Player.Position,
-                KitUrl = pt.Player.Club?.KitUrl,
-                IsStarter = pt.IsStarter,
-                DateOfBirth =  pt.Player.DateOfBirth,
-
-            }).OrderBy(pt => pt.IsStarter == true) //титул€рите?
-            .ToList()
+            StarterPlayers = starterPlayers,
+            BenchPlayers = benchPlayers
+            
         };
 
         return View(model);
+    }
+    [HttpPost]
+    [HttpPost]
+    public async Task<IActionResult> SchemePositionChanger([FromBody] SwapPositionsDto dto)
+    {
+        var player1 = _context.PlayerTeams.FirstOrDefault(pt => pt.PlayerId == dto.Pos1 && pt.IsStarter == true);
+        var player2 = _context.PlayerTeams.FirstOrDefault(pt => pt.PlayerId == dto.Pos2 && pt.IsStarter == true);
+
+        if (player1 == null || player2 == null)
+            return BadRequest("Invalid player positions");
+
+        int? temp = player1.SchemePosition;
+        player1.SchemePosition = player2.SchemePosition;
+        player2.SchemePosition = temp;
+
+        await _context.SaveChangesAsync();
+
+        return Ok(new[]
+        {
+        new { PlayerId = player1.PlayerId, SchemePosition = player1.SchemePosition },
+        new { PlayerId = player2.PlayerId, SchemePosition = player2.SchemePosition }
+    });
     }
 
     public IActionResult Privacy()

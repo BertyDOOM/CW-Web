@@ -9,10 +9,12 @@ namespace Entities.ViewModels
 {
     public class PlayerViewModel
     {
+        public int Id { get; set; }
         public string Name { get; set; }
         public string Position { get; set; }
         public string KitUrl { get; set; }
         public bool? IsStarter { get; set; }
+        public int? SchemePosition { get; set; }
         public DateTime? DateOfBirth { get; set; }
         public int Age 
         { 

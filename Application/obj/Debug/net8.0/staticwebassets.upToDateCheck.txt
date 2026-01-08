@@ -1,7 +1,14 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\img\Lion logo.png
+wwwroot\img\soccer-pitch.jpg
+wwwroot\img\soccerpitch.jpg
 wwwroot\img\trainee Kit.png
+wwwroot\img\var 2.png
+wwwroot\img\var 3.png
+wwwroot\img\var 4.png
+wwwroot\img\var 5.png
+wwwroot\img\var 6.png
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\LICENSE
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
