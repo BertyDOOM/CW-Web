@@ -13,22 +13,24 @@ namespace Entities.ViewModels
         public string Name { get; set; }
         public string Position { get; set; }
         public string KitUrl { get; set; }
+        public string ClubUrl { get; set; }
         public bool? IsStarter { get; set; }
         public int? SchemePosition { get; set; }
         public DateTime? DateOfBirth { get; set; }
-        public int Age 
-        { 
-            get
+        public string? Nationality { get; set; }
+        public int? Age { get; set; }
+
+        public static int? SetAge(DateTime? dateOfBirth)
+        {
+            if (dateOfBirth == null)
             {
-                if (DateOfBirth == null)
-                {
-                    return 0;
-                }
-                var today = DateTime.Today;
-                var age = today.Year - DateOfBirth.Value.Year;
-                if (DateOfBirth.Value.Date > today.AddYears(-age)) age--;
-                return age;
+                return null;
             }
+            var today = DateTime.Today;
+            var age = today.Year - dateOfBirth.Value.Year;
+            if (dateOfBirth.Value.Date > today.AddYears(-age)) age--;
+            return age;
         }
     }
 }
+

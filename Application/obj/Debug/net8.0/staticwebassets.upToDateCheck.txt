@@ -1,6 +1,8 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\img\Go buy card.png
 wwwroot\img\Lion logo.png
+wwwroot\img\extended pitch.png
 wwwroot\img\soccer-pitch.jpg
 wwwroot\img\soccerpitch.jpg
 wwwroot\img\trainee Kit.png

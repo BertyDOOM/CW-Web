@@ -26,16 +26,16 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        if (!User.Identity.IsAuthenticated) 
-        { 
+        if (!User.Identity.IsAuthenticated)
+        {
             ViewBag.ShowLogin = true;
             ViewBag.ShowCreateTeam = false;
-            return View("Welcome"); 
+            return View("Welcome");
         }
 
         int userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
         var user = _context.Users.FirstOrDefault(u => u.Id == userId);
-        
+
         if (user == null)
         {
             return RedirectToAction("Welcome");
@@ -48,8 +48,8 @@ public class HomeController : Controller
                         .ThenInclude(p => p.Club)
                 .FirstOrDefault(t => t.UserId == userId && !t.IsDeleted);
 
-        
-        if (team == null) 
+
+        if (team == null)
         {
             ViewBag.ShowLogin = false;
             ViewBag.ShowCreateTeam = true;
@@ -64,8 +64,11 @@ public class HomeController : Controller
         Name = pt.Player.Name,
         Position = pt.Player.Position,
         KitUrl = pt.Player.Club?.KitUrl,
+        ClubUrl = pt.Player.Club?.CrestUrl,
         SchemePosition = pt.SchemePosition,
         DateOfBirth = pt.Player.DateOfBirth,
+        Nationality = pt.Player.Nationality,
+        Age = PlayerViewModel.SetAge(pt.Player.DateOfBirth),
         IsStarter = pt.IsStarter
     })
     .Take(11)
@@ -80,9 +83,12 @@ public class HomeController : Controller
                     Id = pt.Player.Id,
                     Name = pt.Player.Name,
                     Position = pt.Player.Position,
-                    SchemePosition = pt.SchemePosition,
                     KitUrl = pt.Player.Club?.KitUrl,
+                    ClubUrl = pt.Player.Club?.CrestUrl,
+                    SchemePosition = pt.SchemePosition,
                     DateOfBirth = pt.Player.DateOfBirth,
+                    Nationality = pt.Player.Nationality,
+                    Age = PlayerViewModel.SetAge(pt.Player.DateOfBirth),
                     IsStarter = pt.IsStarter
                 })
                 .ToList();
@@ -103,7 +109,8 @@ public class HomeController : Controller
 
         return View(model);
     }
-    [HttpPost]
+
+
     [HttpPost]
     public async Task<IActionResult> SchemePositionChanger([FromBody] SwapPositionsDto dto)
     {
@@ -125,6 +132,36 @@ public class HomeController : Controller
         new { PlayerId = player2.PlayerId, SchemePosition = player2.SchemePosition }
     });
     }
+
+    [HttpPost]
+    public async Task<IActionResult> MakeStarter([FromBody] MakeStarterDto dto) 
+    {
+        int userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
+
+        var team = await _context.Teams
+        .FirstOrDefaultAsync(t => t.UserId == userId);
+
+        var newStarter = await _context.PlayerTeams
+        .FirstOrDefaultAsync(pt =>
+            pt.TeamId == team.Id &&
+            pt.PlayerId == dto.PlayerId);
+
+        var oldStarter = await _context.PlayerTeams
+                .FirstOrDefaultAsync(pt =>
+            pt.SchemePosition == dto.SchemePosition &&
+            pt.Team.UserId == userId &&
+            pt.IsStarter == true);
+
+        oldStarter.IsStarter = false;
+        oldStarter.SchemePosition = null;
+
+        newStarter.IsStarter = true;
+        newStarter.SchemePosition = dto.SchemePosition;
+
+        await _context.SaveChangesAsync();
+        return Ok();
+    }
+
 
     public IActionResult Privacy()
     {

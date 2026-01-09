@@ -1,0 +1,141 @@
+﻿@model Entities.ViewModels.PlayerViewModel
+
+<div id="player-@Model.Id" class="player-modal-overlay">
+    <div class="player-modal">
+
+        <a href="#" class="close-modal">✕</a>
+
+        <!-- Лява половина: снимка + клуб -->
+        <div class="modal-left">
+            <div class="player-image-wrapper">
+                <img src="@Model.KitUrl" class="player-kit" />
+                
+                 @* <img src="@Model.ClubUrl" class="club-logo" />  *@
+            </div>
+        </div>
+
+        <!-- Дясна половина: данни -->
+        <div class="modal-right">
+            <h2>@Model.Name</h2>
+
+            <div class="info-row"><span>Position: @Model.Position</span></div>
+
+            @if (Model.Nationality != null)
+            {
+                <div class="info-row"><span>Nationality: @Model.Nationality</span></div>
+            }
+
+            @if (Model.DateOfBirth != null)
+            {
+                <div class="info-row">
+                    <span>Date of birth:
+                    @Model.DateOfBirth.Value.ToString("dd MMM yyyy")</span>
+                </div>
+            }
+
+            @if (Model.Age != null)
+            {
+                <div class="info-row"><span>Age: @Model.Age</span></div>
+            }
+        </div>
+
+    </div>
+</div>
+
+<style>
+    .player-modal-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.45);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 999;
+    }
+
+        .player-modal-overlay:target {
+            display: flex;
+        }
+
+    .player-modal {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr; 
+        width: 500px; 
+        max-width: 90%;
+        height: 220px; 
+        background-color: transparent;
+        padding: 0;
+        position: relative;
+        box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+        border-radius: 1px;
+        overflow: hidden;
+    }
+
+    /* Close бутон */
+    .close-modal {
+        position: absolute;
+        top: 10px;
+        right: 12px;
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+        z-index: 10;
+    }
+
+    /* Лява половина */
+    .modal-left {
+        background-color: rgb(85, 189, 180);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    /* Снимка на играча */
+    .player-image-wrapper {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Тук може да се добави малко лого на клуба */
+    .club-logo {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+    }
+
+    /* Играч снимка */
+    .player-kit {
+        width: 100px;
+        height: auto;
+    }
+
+    /* Дясна половина */
+    .modal-right {
+        background-color: rgb(100, 220, 210);
+        color: white;
+        padding: 15px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+        .modal-right h2 {
+            margin: 0 0 10px;
+            text-align: center;
+        }
+
+    .info-row {
+        font-size: 0.9rem;
+        margin-bottom: 6px;
+    }
+
+        .info-row span {
+            font-weight: 600;
+        }
+</style>

@@ -1,4 +1,5 @@
-﻿@model Entities.ViewModels.UserTeamViewModel
+﻿@using Entities.ViewModels
+@model Entities.ViewModels.UserTeamViewModel
 @{
     ViewData["Title"] = "My Fantasy Team";
 }
@@ -33,52 +34,139 @@
         <div class="pitch">
 
             <div class="grid-row grid-row-GK">
-                @foreach (var p in Model.StarterPlayers.Where((pl, i) => i == 0))
-                {
-                    <div class="player-card" draggable="true" data-player-id="@p.Id">
-                        <img src="@p.KitUrl" />
-                        <div class="player-name">@p.Name</div>
-                    </div>
+                @{
+                    var Gk = Model.StarterPlayers?.Where(p => p.SchemePosition == 1).ToList() ?? new List<PlayerViewModel>();
                 }
+                @if (Gk.Any())
+                {
+                    @foreach (var p in Gk)
+                    {
+                        <div class="player-card" draggable="true" data-player-id="@p.Id">
+                            <img src="@p.KitUrl" />
+                            <a href="#player-@p.Id" class="player-name">@p.Name</a>
+                        </div>
+                        @await Html.PartialAsync("_PlayerInfoPartial", p)
+                    }
+                }else
+                {
+                    <div class="empty-card"></div>
+                }
+
             </div>
 
             <div class="grid-row grid-row-Defense">
-                @foreach (var p in Model.StarterPlayers.Where((pl, i) => i >= 1 && i <= 4))
-                {
+                @{
+                    var Def = Model.StarterPlayers?.Where(p => p.SchemePosition >= 2 && p.SchemePosition <= 5)
+                    .ToDictionary(p => p.SchemePosition.Value) ?? new Dictionary<int, PlayerViewModel>();
+                }
+                @for (int i = 2; i <= 5; i++)
+                {   if (Def.ContainsKey(i))
+                    {
+					PlayerViewModel p = Def[i];
                     <div class="player-card" draggable="true" data-player-id="@p.Id">
                         <img src="@p.KitUrl" />
-                        <div class="player-name">@p.Name</div>
+                        <a href="#player-@p.Id" class="player-name">@p.Name</a>
                     </div>
+                        @await Html.PartialAsync("_PlayerInfoPartial", p)
+                    }
+                    else
+                    {
+				        <div class="empty-card"></div>
+                    }
                 }
             </div>
 
             <div class="grid-row grid-row-Midfield">
-                @foreach (var p in Model.StarterPlayers.Where((pl, i) => i >= 5 && i <= 8))
+                @{
+                    var Mid = Model.StarterPlayers?.Where(p => p.SchemePosition >= 6 && p.SchemePosition <= 9)
+                    .ToDictionary(p => p.SchemePosition.Value) ?? new Dictionary<int, PlayerViewModel>();
+                }
+                @for (int i = 6; i <= 9; i++)
                 {
-                    <div class="player-card" draggable="true" data-player-id="@p.Id">
-                        <img src="@p.KitUrl" />
-                        <div class="player-name">@p.Name</div>
-                    </div>
+                    if (Mid.ContainsKey(i))
+                    {
+                        PlayerViewModel p = Mid[i];
+                        <div class="player-card" draggable="true" data-player-id="@p.Id">
+                            <img src="@p.KitUrl" />
+                            <a href="#player-@p.Id" class="player-name">@p.Name</a>
+                        </div>
+                        @await Html.PartialAsync("_PlayerInfoPartial", p)
+                    }
+                    else
+                    {
+                        <div class="empty-card"></div>
+                    }
                 }
             </div>
 
             <div class="grid-row grid-row-FW">
-                @foreach (var p in Model.StarterPlayers.Where((pl, i) => i >= 9 && i <= 10))
+                @{
+                    var Fw = Model.StarterPlayers?.Where(p => p.SchemePosition >= 10 && p.SchemePosition <= 11)
+                    .ToDictionary(p => p.SchemePosition.Value) ?? new Dictionary<int, PlayerViewModel>();
+                }
+                @for (int i = 10; i <= 11; i++)
                 {
-                    <div class="player-card" draggable="true" data-player-id="@p.Id">
-                        <img src="@p.KitUrl" />
-                        <div class="player-name">@p.Name</div>
-                    </div>
+                    if (Fw.ContainsKey(i))
+                    {
+                        PlayerViewModel p = Fw[i];
+                        <div class="player-card" draggable="true" data-player-id="@p.Id">
+                            <img src="@p.KitUrl" />
+                            <a href="#player-@p.Id" class="player-name">@p.Name</a>
+                        </div>
+                        @await Html.PartialAsync("_PlayerInfoPartial", p)
+                    }
+                    else
+                    {
+                        <div class="empty-card"></div>
+                    }
                 }
             </div>
-
-        </div>
-        <div class="bench">
-            <div class="coach-card">
-                <img src="~/img/trainee Kit.png" />
-                <div class="player-name">@Model.Coach.Name</div>
+			<div class="bench">
+                 @if (Model.Coach != null)
+                 {
+                 <div class="coach-card">
+                     <img src="~/img/trainee Kit.png" />
+                     <div class="coach-name">@Model.Coach.Name</div>
+                 </div>
+                 }
+                 else
+                 {
+                    <div class="empty-card"></div>
+                 }
+                 <div class="bench-select-wrapper">
+                    <label for="bench-select" style="color:white; font-weight:500;">Bench:</label>
+                    <select id="bench-select" name="bench-player" 
+                            style="width:100%; padding:4px; border-radius:4px; margin-top:4px;"
+                            onchange="if(this.value) location.href='#player-'+this.value">
+                        @if (Model.BenchPlayers.Any())
+                        {
+                            <option value="">Select a player</option>
+                            @foreach (var p in Model.BenchPlayers)
+                            {
+                                <option value="@p.Id">@p.Name</option>
+                            
+                           
+                            }
+                            
+                        }
+                        else
+                        {
+                        <option value="">No bench players</option>
+                        }
+                        
+                    </select>
+                    @foreach (var p in Model.BenchPlayers)
+                    {
+                        @await Html.PartialAsync("_PlayerInfoMakeStarterPartial", p)
+                    }
+                </div>
             </div>
+                
+                
+             
+			</div>
         </div>
+        
     </div>
 
     <div class="grid-div">a</div>
@@ -185,20 +273,25 @@
     /* Pitch arc */
     .pitch {
         position: relative;
-        background: url("/img/var 5.png") no-repeat center center;
-        background-size: cover;
+        background: url("/img/extended pitch.png") no-repeat center center;
+        background-size: 100% 100%;
+        box-sizing: border-box;
         display: grid;
-        grid-template-rows: 130px 130px 130px 130px;
+        grid-template-rows: 130px 130px 130px 130px 140px;
         gap: 10px;
-        padding: 10px;
+        /* padding: 10px; */
+        border-radius: 10px;
+        overflow: hidden;
+        width: 100%;
     }
 
-    .bench
-    {
-    background-color: gray;
-    height: 160px;
-    border-radius: 0 0 10px 10px;
-		padding: 20px;
+    .bench {
+        background-color: rgba(0, 0, 0, 0.45);
+        height: 140px;
+        display: flex;
+        align-items: center;
+        padding-left: 27px;
+        border-radius: 0 0 10px 10px;
     }
 
     .grid-row {
@@ -226,7 +319,7 @@
 
     .player-card {
         background-color: #37003C4D;
-        border-radius: 4px;
+        border-radius: 6px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -263,11 +356,17 @@
             font-weight: 500;
             width: 100%;
             padding: 2px 0;
+             text-decoration: none;
         }
 
+        .player-name:hover {
+            color: lightgray;
+            text-decoration: none;
+        }
         .coach-card {
-        background-color: darkgray;
-        border-radius: 4px;
+		margin: 5px;
+        border-radius : 6px;
+        background-color: rgba(255, 255, 255, 0.45);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -276,6 +375,7 @@
         width: 80px;
         height: 125px;
         flex-shrink: 0;
+
     }
 
         .coach-card img {
@@ -287,6 +387,35 @@
             -webkit-user-drag: none;
             pointer-events: none;
         }
+
+    .coach-name {
+        font-size: 0.8rem;
+        text-align: center;
+        margin-top: 0px;
+        color: white;
+        background-color: black;
+        font-weight: 500;
+        width: 100%;
+        padding: 2px 0;
+        border-radius: 0 0 6px 6px;
+    }
+
+    .empty-card {
+        background: url("/img/Go buy card.png") no-repeat center center;
+        background-size: 100% 65%;
+		position: relative;
+        border-radius: 6px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 0.2s;
+        width: 80px;
+        height: 119px;
+        flex-shrink: 0;
+        border: 3px dashed rgb(82, 81, 89);
+    }
+
+    .bench-select-wrapper { padding-left: 100px;}
 </style>
 
 <script>
@@ -356,6 +485,33 @@
                 // празно място – просто премести
                 row.appendChild(dragged);
             }
+        });
+    });
+        document.addEventListener('DOMContentLoaded', () => {
+        // Всички бутони за starter
+        document.querySelectorAll('.starter-btn').forEach(btn => {
+            btn.addEventListener('click', async function() {
+                const playerId = parseInt(this.dataset.playerId);
+                const schemePosition = parseInt(this.dataset.pos);
+                if (!schemePosition) return;
+
+                try {
+                    const res = await fetch('/Home/MakeStarter', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ PlayerId: playerId, SchemePosition: schemePosition })
+                    });
+
+                    if (!res.ok) throw new Error('Network error');
+
+                    // Презареждаме страницата за визуализиране на новия starter
+                    location.reload();
+
+                } catch (err) {
+                    console.error(err);
+                    alert('Error making player starter');
+                }
+            });
         });
     });
 </script>

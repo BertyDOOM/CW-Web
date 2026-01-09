@@ -3,34 +3,43 @@
   "WorkspaceRootPath": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Data\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5826D3E2-35D1-3394-E8AD-3768DEE232D8}|..\\Application\\Application.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\application\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5826D3E2-35D1-3394-E8AD-3768DEE232D8}|..\\Application\\Application.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\application\\views\\shared\\_playerinfopartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5826D3E2-35D1-3394-E8AD-3768DEE232D8}|..\\Application\\Application.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\application\\views\\shared\\_playerinfomakestarterpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5826D3E2-35D1-3394-E8AD-3768DEE232D8}|..\\Application\\Application.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\application\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{968BCC52-A992-C035-E67E-050C7F1A82B5}|..\\Entities\\Entities.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\entities\\viewmodels\\userteamviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6383C15B-5AA6-14CC-E6DE-B8C238620A33}|..\\Services\\Services.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\services\\dtos\\playerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6383C15B-5AA6-14CC-E6DE-B8C238620A33}|..\\Services\\Services.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\services\\dtos\\coachdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6383C15B-5AA6-14CC-E6DE-B8C238620A33}|..\\Services\\Services.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\services\\dtos\\swappositionsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6383C15B-5AA6-14CC-E6DE-B8C238620A33}|..\\Services\\Services.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\services\\footballdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5826D3E2-35D1-3394-E8AD-3768DEE232D8}|..\\Application\\Application.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\application\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{5826D3E2-35D1-3394-E8AD-3768DEE232D8}|..\\Application\\Application.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\application\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{968BCC52-A992-C035-E67E-050C7F1A82B5}|..\\Entities\\Entities.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\entities\\footballentities\\playerteam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{968BCC52-A992-C035-E67E-050C7F1A82B5}|..\\Entities\\Entities.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\entities\\footballentities\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6383C15B-5AA6-14CC-E6DE-B8C238620A33}|..\\Services\\Services.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\services\\dtos\\makestarterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5826D3E2-35D1-3394-E8AD-3768DEE232D8}|..\\Application\\Application.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\application\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5826D3E2-35D1-3394-E8AD-3768DEE232D8}|..\\Application\\Application.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\application\\views\\home\\welcome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6383C15B-5AA6-14CC-E6DE-B8C238620A33}|..\\Services\\Services.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\services\\dtos\\swappositionsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5826D3E2-35D1-3394-E8AD-3768DEE232D8}|..\\Application\\Application.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\application\\views\\transfer\\market.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5826D3E2-35D1-3394-E8AD-3768DEE232D8}|..\\Application\\Application.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\application\\views\\team\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5826D3E2-35D1-3394-E8AD-3768DEE232D8}|..\\Application\\Application.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\application\\controllers\\transfercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{968BCC52-A992-C035-E67E-050C7F1A82B5}|..\\Entities\\Entities.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\entities\\viewmodels\\userteamviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{968BCC52-A992-C035-E67E-050C7F1A82B5}|..\\Entities\\Entities.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\entities\\viewmodels\\playerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -39,7 +48,22 @@
       "AbsoluteMoniker": "D:0:0:{968BCC52-A992-C035-E67E-050C7F1A82B5}|..\\Entities\\Entities.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\entities\\footballentities\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{6383C15B-5AA6-14CC-E6DE-B8C238620A33}|..\\Services\\Services.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\services\\dtos\\playerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{968BCC52-A992-C035-E67E-050C7F1A82B5}|..\\Entities\\Entities.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\entities\\footballentities\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5826D3E2-35D1-3394-E8AD-3768DEE232D8}|..\\Application\\Application.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\application\\wwwroot\\img\\extended pitch.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6383C15B-5AA6-14CC-E6DE-B8C238620A33}|..\\Services\\Services.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\services\\dtos\\coachdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6383C15B-5AA6-14CC-E6DE-B8C238620A33}|..\\Services\\Services.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\services\\footballdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{968BCC52-A992-C035-E67E-050C7F1A82B5}|..\\Entities\\Entities.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\entities\\footballentities\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{968BCC52-A992-C035-E67E-050C7F1A82B5}|..\\Entities\\Entities.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\entities\\footballentities\\coach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -51,9 +75,6 @@
       "AbsoluteMoniker": "D:0:0:{968BCC52-A992-C035-E67E-050C7F1A82B5}|..\\Entities\\Entities.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\entities\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5826D3E2-35D1-3394-E8AD-3768DEE232D8}|..\\Application\\Application.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\application\\views\\shared\\_pitchwithsquad.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{968BCC52-A992-C035-E67E-050C7F1A82B5}|..\\Entities\\Entities.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\entities\\viewmodels\\createteamviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -61,9 +82,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{5826D3E2-35D1-3394-E8AD-3768DEE232D8}|..\\Application\\Application.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\application\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5826D3E2-35D1-3394-E8AD-3768DEE232D8}|..\\Application\\Application.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\application\\views\\home\\welcome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5826D3E2-35D1-3394-E8AD-3768DEE232D8}|..\\Application\\Application.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\application\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
@@ -75,16 +93,7 @@
       "AbsoluteMoniker": "D:0:0:{5826D3E2-35D1-3394-E8AD-3768DEE232D8}|..\\Application\\Application.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\application\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5826D3E2-35D1-3394-E8AD-3768DEE232D8}|..\\Application\\Application.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\application\\views\\transfer\\market.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5826D3E2-35D1-3394-E8AD-3768DEE232D8}|..\\Application\\Application.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\application\\controllers\\teamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5826D3E2-35D1-3394-E8AD-3768DEE232D8}|..\\Application\\Application.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\application\\controllers\\transfercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5826D3E2-35D1-3394-E8AD-3768DEE232D8}|..\\Application\\Application.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\application\\views\\team\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6383C15B-5AA6-14CC-E6DE-B8C238620A33}|..\\Services\\Services.csproj|c:\\users\\bertan\\source\\repos\\cw-web\\services\\teamapiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -185,49 +194,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "..\\Application\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "..\\Application\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAOkAAAAAAAAAAAAAANYAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAUwJQAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-12-13T14:04:33.352Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "..\\Application\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Controllers\\HomeController.cs",
               "RelativeToolTip": "..\\Application\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAHwAAAAAAAAAAAAYwH8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAUwFwAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-02T12:30:08.421Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "..\\Application\\wwwroot\\css\\site.css",
               "ToolTip": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\wwwroot\\css\\site.css",
               "RelativeToolTip": "..\\Application\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAACQAAAAAAAAAAAAQwC4AAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAQwCQAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2026-01-04T12:54:37.361Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -235,58 +241,68 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Player.cs",
-              "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Entities\\FootballEntities\\Player.cs",
-              "RelativeDocumentMoniker": "..\\Entities\\FootballEntities\\Player.cs",
-              "ToolTip": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Entities\\FootballEntities\\Player.cs",
-              "RelativeToolTip": "..\\Entities\\FootballEntities\\Player.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAIwBMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-28T17:16:59.073Z"
+              "DocumentIndex": 1,
+              "Title": "_PlayerInfoMakeStarterPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Views\\Shared\\_PlayerInfoMakeStarterPartial.cshtml",
+              "RelativeDocumentMoniker": "..\\Application\\Views\\Shared\\_PlayerInfoMakeStarterPartial.cshtml",
+              "ToolTip": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Views\\Shared\\_PlayerInfoMakeStarterPartial.cshtml",
+              "RelativeToolTip": "..\\Application\\Views\\Shared\\_PlayerInfoMakeStarterPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-09T14:22:53.995Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_PlayerInfoPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Views\\Shared\\_PlayerInfoPartial.cshtml",
+              "RelativeDocumentMoniker": "..\\Application\\Views\\Shared\\_PlayerInfoPartial.cshtml",
+              "ToolTip": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Views\\Shared\\_PlayerInfoPartial.cshtml",
+              "RelativeToolTip": "..\\Application\\Views\\Shared\\_PlayerInfoPartial.cshtml",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAmwEMAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-09T11:20:35.822Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "CoachDto.cs",
-              "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Services\\DTOs\\CoachDto.cs",
-              "RelativeDocumentMoniker": "..\\Services\\DTOs\\CoachDto.cs",
-              "ToolTip": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Services\\DTOs\\CoachDto.cs",
-              "RelativeToolTip": "..\\Services\\DTOs\\CoachDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAZAAAAAAAAAA==",
+              "Title": "PlayerTeam.cs",
+              "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Entities\\FootballEntities\\PlayerTeam.cs",
+              "RelativeDocumentMoniker": "..\\Entities\\FootballEntities\\PlayerTeam.cs",
+              "ToolTip": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Entities\\FootballEntities\\PlayerTeam.cs",
+              "RelativeToolTip": "..\\Entities\\FootballEntities\\PlayerTeam.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAgwBAAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-28T17:20:31.432Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PlayerDto.cs",
-              "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Services\\DTOs\\PlayerDto.cs",
-              "RelativeDocumentMoniker": "..\\Services\\DTOs\\PlayerDto.cs",
-              "ToolTip": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Services\\DTOs\\PlayerDto.cs",
-              "RelativeToolTip": "..\\Services\\DTOs\\PlayerDto.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-28T17:20:01.64Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserTeamViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Entities\\ViewModels\\UserTeamViewModel.cs",
-              "RelativeDocumentMoniker": "..\\Entities\\ViewModels\\UserTeamViewModel.cs",
-              "ToolTip": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Entities\\ViewModels\\UserTeamViewModel.cs",
-              "RelativeToolTip": "..\\Entities\\ViewModels\\UserTeamViewModel.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-04T14:48:08.85Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-28T17:17:15.956Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "MakeStarterDto.cs",
+              "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Services\\DTOs\\MakeStarterDto.cs",
+              "RelativeDocumentMoniker": "..\\Services\\DTOs\\MakeStarterDto.cs",
+              "ToolTip": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Services\\DTOs\\MakeStarterDto.cs",
+              "RelativeToolTip": "..\\Services\\DTOs\\MakeStarterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T15:53:46.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Welcome.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Views\\Home\\Welcome.cshtml",
+              "RelativeDocumentMoniker": "..\\Application\\Views\\Home\\Welcome.cshtml",
+              "ToolTip": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Views\\Home\\Welcome.cshtml",
+              "RelativeToolTip": "..\\Application\\Views\\Home\\Welcome.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-02T13:01:46.512Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "SwapPositionsDto.cs",
               "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Services\\DTOs\\SwapPositionsDto.cs",
               "RelativeDocumentMoniker": "..\\Services\\DTOs\\SwapPositionsDto.cs",
@@ -294,64 +310,47 @@
               "RelativeToolTip": "..\\Services\\DTOs\\SwapPositionsDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-08T17:22:02.183Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FootballDataService.cs",
-              "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Services\\FootballDataService.cs",
-              "RelativeDocumentMoniker": "..\\Services\\FootballDataService.cs",
-              "ToolTip": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Services\\FootballDataService.cs",
-              "RelativeToolTip": "..\\Services\\FootballDataService.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAYwAMAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-28T17:24:57.089Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PlayerViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Entities\\ViewModels\\PlayerViewModel.cs",
-              "RelativeDocumentMoniker": "..\\Entities\\ViewModels\\PlayerViewModel.cs",
-              "ToolTip": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Entities\\ViewModels\\PlayerViewModel.cs",
-              "RelativeToolTip": "..\\Entities\\ViewModels\\PlayerViewModel.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAA9wCIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-04T14:57:11.992Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-08T17:22:02.183Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "Team.cs",
-              "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Entities\\FootballEntities\\Team.cs",
-              "RelativeDocumentMoniker": "..\\Entities\\FootballEntities\\Team.cs",
-              "ToolTip": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Entities\\FootballEntities\\Team.cs",
-              "RelativeToolTip": "..\\Entities\\FootballEntities\\Team.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAswBQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-28T17:17:22.909Z",
-              "EditorCaption": ""
+              "Title": "Market.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Views\\Transfer\\Market.cshtml",
+              "RelativeDocumentMoniker": "..\\Application\\Views\\Transfer\\Market.cshtml",
+              "ToolTip": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Views\\Transfer\\Market.cshtml",
+              "RelativeToolTip": "..\\Application\\Views\\Transfer\\Market.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-04T15:38:25.127Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PlayerTeam.cs",
-              "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Entities\\FootballEntities\\PlayerTeam.cs",
-              "RelativeDocumentMoniker": "..\\Entities\\FootballEntities\\PlayerTeam.cs",
-              "ToolTip": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Entities\\FootballEntities\\PlayerTeam.cs",
-              "RelativeToolTip": "..\\Entities\\FootballEntities\\PlayerTeam.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAgwBQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-28T17:17:15.956Z",
-              "EditorCaption": ""
+              "DocumentIndex": 10,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Views\\Team\\Create.cshtml",
+              "RelativeDocumentMoniker": "..\\Application\\Views\\Team\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Views\\Team\\Create.cshtml",
+              "RelativeToolTip": "..\\Application\\Views\\Team\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-02T14:01:55.897Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
+              "Title": "TransferController.cs",
+              "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Controllers\\TransferController.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Controllers\\TransferController.cs",
+              "ToolTip": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Controllers\\TransferController.cs",
+              "RelativeToolTip": "..\\Application\\Controllers\\TransferController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAmwBMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T16:34:18.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "Person.cs",
               "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Entities\\FootballEntities\\Person.cs",
               "RelativeDocumentMoniker": "..\\Entities\\FootballEntities\\Person.cs",
@@ -364,6 +363,101 @@
             {
               "$type": "Document",
               "DocumentIndex": 13,
+              "Title": "PlayerViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Entities\\ViewModels\\PlayerViewModel.cs",
+              "RelativeDocumentMoniker": "..\\Entities\\ViewModels\\PlayerViewModel.cs",
+              "ToolTip": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Entities\\ViewModels\\PlayerViewModel.cs",
+              "RelativeToolTip": "..\\Entities\\ViewModels\\PlayerViewModel.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAxwA8AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T14:57:11.992Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserTeamViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Entities\\ViewModels\\UserTeamViewModel.cs",
+              "RelativeDocumentMoniker": "..\\Entities\\ViewModels\\UserTeamViewModel.cs",
+              "ToolTip": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Entities\\ViewModels\\UserTeamViewModel.cs",
+              "RelativeToolTip": "..\\Entities\\ViewModels\\UserTeamViewModel.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T14:48:08.85Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PlayerDto.cs",
+              "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Services\\DTOs\\PlayerDto.cs",
+              "RelativeDocumentMoniker": "..\\Services\\DTOs\\PlayerDto.cs",
+              "ToolTip": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Services\\DTOs\\PlayerDto.cs",
+              "RelativeToolTip": "..\\Services\\DTOs\\PlayerDto.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T17:20:01.64Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Entities\\FootballEntities\\Player.cs",
+              "RelativeDocumentMoniker": "..\\Entities\\FootballEntities\\Player.cs",
+              "ToolTip": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Entities\\FootballEntities\\Player.cs",
+              "RelativeToolTip": "..\\Entities\\FootballEntities\\Player.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAIwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T17:16:59.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CoachDto.cs",
+              "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Services\\DTOs\\CoachDto.cs",
+              "RelativeDocumentMoniker": "..\\Services\\DTOs\\CoachDto.cs",
+              "ToolTip": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Services\\DTOs\\CoachDto.cs",
+              "RelativeToolTip": "..\\Services\\DTOs\\CoachDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T17:20:31.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "extended pitch.png",
+              "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\wwwroot\\img\\extended pitch.png",
+              "RelativeDocumentMoniker": "..\\Application\\wwwroot\\img\\extended pitch.png",
+              "ToolTip": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\wwwroot\\img\\extended pitch.png",
+              "RelativeToolTip": "..\\Application\\wwwroot\\img\\extended pitch.png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2026-01-09T10:58:07.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "FootballDataService.cs",
+              "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Services\\FootballDataService.cs",
+              "RelativeDocumentMoniker": "..\\Services\\FootballDataService.cs",
+              "ToolTip": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Services\\FootballDataService.cs",
+              "RelativeToolTip": "..\\Services\\FootballDataService.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAYwAMAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T17:24:57.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Team.cs",
+              "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Entities\\FootballEntities\\Team.cs",
+              "RelativeDocumentMoniker": "..\\Entities\\FootballEntities\\Team.cs",
+              "ToolTip": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Entities\\FootballEntities\\Team.cs",
+              "RelativeToolTip": "..\\Entities\\FootballEntities\\Team.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAswBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T17:17:22.909Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "Coach.cs",
               "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Entities\\FootballEntities\\Coach.cs",
               "RelativeDocumentMoniker": "..\\Entities\\FootballEntities\\Coach.cs",
@@ -375,7 +469,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 22,
               "Title": "Club.cs",
               "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Entities\\FootballEntities\\Club.cs",
               "RelativeDocumentMoniker": "..\\Entities\\FootballEntities\\Club.cs",
@@ -387,7 +481,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 23,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Entities\\Entities\\User.cs",
               "RelativeDocumentMoniker": "..\\Entities\\Entities\\User.cs",
@@ -399,19 +493,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "_PitchWithSquad.cshtml",
-              "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Views\\Shared\\_PitchWithSquad.cshtml",
-              "RelativeDocumentMoniker": "..\\Application\\Views\\Shared\\_PitchWithSquad.cshtml",
-              "ToolTip": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Views\\Shared\\_PitchWithSquad.cshtml",
-              "RelativeToolTip": "..\\Application\\Views\\Shared\\_PitchWithSquad.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-07T16:29:20.371Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 24,
               "Title": "CreateTeamViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Entities\\ViewModels\\CreateTeamViewModel.cs",
               "RelativeDocumentMoniker": "..\\Entities\\ViewModels\\CreateTeamViewModel.cs",
@@ -423,7 +505,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 27,
               "Title": "bootstrap-grid.css",
               "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
               "RelativeDocumentMoniker": "..\\Application\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
@@ -435,19 +517,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Welcome.cshtml",
-              "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Views\\Home\\Welcome.cshtml",
-              "RelativeDocumentMoniker": "..\\Application\\Views\\Home\\Welcome.cshtml",
-              "ToolTip": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Views\\Home\\Welcome.cshtml",
-              "RelativeToolTip": "..\\Application\\Views\\Home\\Welcome.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-02T13:01:46.512Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 26,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "..\\Application\\Views\\Shared\\_Layout.cshtml",
@@ -459,7 +529,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 25,
               "Title": "bootstrap.css",
               "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
               "RelativeDocumentMoniker": "..\\Application\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
@@ -471,7 +541,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 29,
               "Title": "_LoginPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Views\\Shared\\_LoginPartial.cshtml",
               "RelativeDocumentMoniker": "..\\Application\\Views\\Shared\\_LoginPartial.cshtml",
@@ -483,7 +553,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 28,
               "Title": "bootstrap-reboot.css",
               "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
               "RelativeDocumentMoniker": "..\\Application\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
@@ -495,19 +565,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Market.cshtml",
-              "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Views\\Transfer\\Market.cshtml",
-              "RelativeDocumentMoniker": "..\\Application\\Views\\Transfer\\Market.cshtml",
-              "ToolTip": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Views\\Transfer\\Market.cshtml",
-              "RelativeToolTip": "..\\Application\\Views\\Transfer\\Market.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-04T15:38:25.127Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 30,
               "Title": "TeamController.cs",
               "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Controllers\\TeamController.cs",
               "RelativeDocumentMoniker": "..\\Application\\Controllers\\TeamController.cs",
@@ -519,19 +577,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "TransferController.cs",
-              "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Controllers\\TransferController.cs",
-              "RelativeDocumentMoniker": "..\\Application\\Controllers\\TransferController.cs",
-              "ToolTip": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Controllers\\TransferController.cs",
-              "RelativeToolTip": "..\\Application\\Controllers\\TransferController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAmwBMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-04T16:34:18.96Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 59,
               "Title": "TransferController",
               "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Controllers\\TransferController",
               "RelativeDocumentMoniker": "..\\Application\\Controllers\\TransferController",
@@ -543,19 +589,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Views\\Team\\Create.cshtml",
-              "RelativeDocumentMoniker": "..\\Application\\Views\\Team\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Views\\Team\\Create.cshtml",
-              "RelativeToolTip": "..\\Application\\Views\\Team\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-02T14:01:55.897Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 31,
               "Title": "TeamApiResponse.cs",
               "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Services\\TeamApiResponse.cs",
               "RelativeDocumentMoniker": "..\\Services\\TeamApiResponse.cs",
@@ -567,7 +601,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 32,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\appsettings.json",
               "RelativeDocumentMoniker": "..\\Application\\appsettings.json",
@@ -579,7 +613,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 33,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Program.cs",
               "RelativeDocumentMoniker": "..\\Application\\Program.cs",
@@ -591,7 +625,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 34,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "..\\Application\\Views\\_ViewImports.cshtml",
@@ -603,7 +637,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 35,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Data\\CW-Fantasy-App\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "CW-Fantasy-App\\ApplicationDbContext.cs",
@@ -615,7 +649,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 36,
               "Title": "ScaffoldingReadMe.txt",
               "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\ScaffoldingReadMe.txt",
               "RelativeDocumentMoniker": "..\\Application\\ScaffoldingReadMe.txt",
@@ -627,7 +661,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 37,
               "Title": "Application.csproj",
               "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Application.csproj",
               "RelativeDocumentMoniker": "..\\Application\\Application.csproj",
@@ -639,7 +673,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 39,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "..\\Application\\Views\\_ViewStart.cshtml",
@@ -651,7 +685,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 38,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "..\\Application\\Models\\ErrorViewModel.cs",
@@ -663,7 +697,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 40,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "..\\Application\\Views\\Home\\Privacy.cshtml",
@@ -675,7 +709,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 41,
               "Title": "IBaseUser.cs",
               "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Entities\\BaseEntities\\IBaseUser.cs",
               "RelativeDocumentMoniker": "..\\Entities\\BaseEntities\\IBaseUser.cs",
@@ -687,7 +721,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 42,
               "Title": "BaseEntity.cs",
               "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Entities\\BaseEntities\\BaseEntity.cs",
               "RelativeDocumentMoniker": "..\\Entities\\BaseEntities\\BaseEntity.cs",
@@ -699,7 +733,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 43,
               "Title": "FootballDataOptions.cs",
               "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Services\\Options\\FootballDataOptions.cs",
               "RelativeDocumentMoniker": "..\\Services\\Options\\FootballDataOptions.cs",
@@ -711,7 +745,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 44,
               "Title": "Services.csproj",
               "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Services\\Services.csproj",
               "RelativeDocumentMoniker": "..\\Services\\Services.csproj",
@@ -723,7 +757,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 47,
               "Title": "Logout.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
               "RelativeDocumentMoniker": "..\\Application\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
@@ -735,7 +769,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 46,
               "Title": "Login.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
               "RelativeDocumentMoniker": "..\\Application\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
@@ -747,7 +781,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 49,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "..\\Application\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
@@ -759,7 +793,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 45,
               "Title": "RegisterConfirmation.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml.cs",
               "RelativeDocumentMoniker": "..\\Application\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml.cs",
@@ -771,7 +805,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 48,
               "Title": "Register.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "RelativeDocumentMoniker": "..\\Application\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
@@ -783,7 +817,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 50,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "..\\Application\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
@@ -795,7 +829,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 53,
               "Title": "Lockout.cshtml",
               "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Areas\\Identity\\Pages\\Account\\Lockout.cshtml",
               "RelativeDocumentMoniker": "..\\Application\\Areas\\Identity\\Pages\\Account\\Lockout.cshtml",
@@ -807,7 +841,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 51,
               "Title": "ForgotPassword.cshtml",
               "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
               "RelativeDocumentMoniker": "..\\Application\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
@@ -819,7 +853,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 52,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Application\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "..\\Application\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
@@ -831,7 +865,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 56,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Data\\CW Fantasy App\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "CW Fantasy App\\ApplicationDbContext.cs",
@@ -843,7 +877,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 54,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
@@ -855,7 +889,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 55,
               "Title": "Entities.csproj",
               "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Entities\\Entities.csproj",
               "RelativeDocumentMoniker": "..\\Entities\\Entities.csproj",
@@ -867,7 +901,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 57,
               "Title": "20251207175823_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Data\\CW Fantasy App\\Migrations\\20251207175823_InitialCreate.cs",
               "RelativeDocumentMoniker": "CW Fantasy App\\Migrations\\20251207175823_InitialCreate.cs",
@@ -879,7 +913,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 58,
               "Title": "ApplicationDbContextModelSnapshot.cs",
               "DocumentMoniker": "C:\\Users\\Bertan\\source\\repos\\CW-Web\\Data\\CW Fantasy App\\Migrations\\ApplicationDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "CW Fantasy App\\Migrations\\ApplicationDbContextModelSnapshot.cs",
