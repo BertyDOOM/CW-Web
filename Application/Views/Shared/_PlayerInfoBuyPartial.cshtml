@@ -1,12 +1,13 @@
 ﻿@model Entities.ViewModels.PlayerViewModel
 
 <div id="player-@Model.Id" class="player-modal-overlay">
-    <div class="player-modal-bench">
+    <div class="player-modal-buy">
         <a href="#" class="close-modal">✕</a>
 
         <div class="modal-left">
             <div class="player-image-wrapper">
                 <img src="@Model.KitUrl" class="player-kit" />
+                <img src="@Model.ClubUrl" class="club-logo" />
             </div>
         </div>
 
@@ -33,9 +34,11 @@
             {
                 <div class="info-row"><span>Age: @Model.Age</span></div>
             }
-
+            <div class="user-points">
+				1000 coins
+            </div>
             <div class="info-row">
-                <span>Select Starter Position:</span>
+                <span>Choose Position:</span>
                 <div class="starter-buttons">
                     <button class="starter-btn" data-player-id="@Model.Id" data-pos="1">GK</button>
                     <button class="starter-btn" data-player-id="@Model.Id" data-pos="2">Left Back</button>

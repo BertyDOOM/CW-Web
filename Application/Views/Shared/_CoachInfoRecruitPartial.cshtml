@@ -1,0 +1,106 @@
+﻿@model Entities.ViewModels.CoachViewModel
+@{
+}
+<div id="coach-@Model.Id" class="player-modal-overlay">
+    <div class="player-modal">
+
+        <a href="#" class="close-modal">✕</a>
+
+        <!-- Лява половина: снимка + клуб -->
+        <div class="modal-left">
+            <div class="player-image-wrapper">
+                <img src="~/img/trainee Kit.png" class="player-kit" />
+            </div>
+        </div>
+
+        <!-- Дясна половина: данни -->
+        <div class="modal-right">
+            <h2>@Model.Name</h2>
+
+            @if (Model.Nationality != null)
+            {
+                <div class="info-row"><span>Nationality: @Model.Nationality</span></div>
+            }
+
+            @if (Model.DateOfBirth != null)
+            {
+                <div class="info-row">
+                    <span>
+                        Date of birth:
+                        @Model.DateOfBirth.Value.ToString("dd MMM yyyy")
+                    </span>
+                </div>
+            }
+
+            @if (Model.Age != null)
+            {
+                <div class="info-row"><span>Age: @Model.Age</span></div>
+            }
+
+            <div class="info-row">
+                <button class="recruit-coach-btn" data-coach-id="@Model.Id">Recruit Coach</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<style>
+    .recruit-coach-btn {
+        padding: 4px 6px;
+        font-size: 0.8rem;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        background-color: #37003C;
+        color: white;
+    }
+
+        .recruit-coach-btn:hover {
+            background-color: #00cd84;
+        }
+</style>
+
+<script>
+       document.addEventListener("DOMContentLoaded", function() {
+        document.querySelectorAll(".recruit-coach-btn").forEach(btn => {
+            btn.addEventListener("click", async function(e) {
+                e.preventDefault();
+                const coachId = parseInt(this.dataset.coachId);
+
+                try {
+                    const res = await fetch("/Transfer/RecruitCoach", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                            "RequestVerificationToken": document.querySelector('input[name="__RequestVerificationToken"]')?.value
+                        },
+                        body: JSON.stringify({ CoachId: coachId })
+                    });
+
+                    if (!res.ok) {
+                        const text = await res.text();
+                        alert("Error: " + text);
+                        return;
+                    }
+
+                    const data = await res.json();
+                    alert("Coach recruited successfully!");
+
+                    // Закриваме модала
+                    const modal = this.closest(".player-modal-overlay");
+                    if(modal) modal.style.display = "none";
+
+                    // Може да премахнем треньора от маркет листа
+                    const row = document.querySelector(`#coach-${coachId}`);
+                    if(row) row.style.display = "none";
+
+                } catch(err) {
+                    console.error(err);
+                    alert("Something went wrong.");
+                }
+            });
+        });
+    });
+
+</script>

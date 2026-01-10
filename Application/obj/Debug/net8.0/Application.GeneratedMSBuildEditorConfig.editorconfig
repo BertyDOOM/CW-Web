@@ -206,12 +206,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Bertan/source/repos/CW-Web/Application/Views/Shared/_CoachInfoPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Db2FjaEluZm9QYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Bertan/source/repos/CW-Web/Application/Views/Shared/_CoachInfoRecruitPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Db2FjaEluZm9SZWNydWl0UGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Bertan/source/repos/CW-Web/Application/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Bertan/source/repos/CW-Web/Application/Views/Shared/_PitchWithSquad.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QaXRjaFdpdGhTcXVhZC5jc2h0bWw=
+[C:/Users/Bertan/source/repos/CW-Web/Application/Views/Shared/_PlayerInfoBuyPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QbGF5ZXJJbmZvQnV5UGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Bertan/source/repos/CW-Web/Application/Views/Shared/_PlayerInfoMakeStarterPartial.cshtml]

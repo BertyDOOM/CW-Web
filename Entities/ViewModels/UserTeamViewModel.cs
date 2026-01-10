@@ -15,7 +15,7 @@ namespace Entities.ViewModels
         public string FavoriteClubName { get; set; }
         public string FavoriteClubCrestUrl { get; set; }
         public string TeamName { get; set; }
-        public Coach Coach { get; set; }
+        public CoachViewModel Coach { get; set; }
         public List<PlayerViewModel> StarterPlayers { get; set; }
         public List<PlayerViewModel> BenchPlayers { get; set; }
     }

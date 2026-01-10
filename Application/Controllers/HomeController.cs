@@ -93,6 +93,21 @@ public class HomeController : Controller
                 })
                 .ToList();
 
+        CoachViewModel? coachViewModel = null;
+
+        if (team.Coach != null)
+        {
+            coachViewModel = new CoachViewModel
+            {
+                Id = team.Coach.Id,
+                Name = team.Coach.Name,
+                ClubUrl = team.Coach.Club?.CrestUrl, 
+                DateOfBirth = team.Coach.DateOfBirth,
+                Nationality = team.Coach.Nationality,
+                Age = CoachViewModel.SetAge(team.Coach.DateOfBirth)
+            };
+        }
+
         var model = new UserTeamViewModel
         {
             UserName = user.UserName.Split('@')[0],
@@ -101,7 +116,7 @@ public class HomeController : Controller
             FavoriteClubCrestUrl = team.FavoriteClub?.CrestUrl,
             FavoriteClubName = team.FavoriteClub?.Name,
             TeamName = team.Name,
-            Coach = team.Coach,
+            Coach = coachViewModel,
             StarterPlayers = starterPlayers,
             BenchPlayers = benchPlayers
             
@@ -151,6 +166,14 @@ public class HomeController : Controller
             pt.SchemePosition == dto.SchemePosition &&
             pt.Team.UserId == userId &&
             pt.IsStarter == true);
+
+        if (oldStarter == null)
+        {
+            newStarter.IsStarter = true;
+            newStarter.SchemePosition = dto.SchemePosition;
+            await _context.SaveChangesAsync();
+            return Ok();
+        }
 
         oldStarter.IsStarter = false;
         oldStarter.SchemePosition = null;

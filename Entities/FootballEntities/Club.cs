@@ -14,7 +14,7 @@ namespace Entities.FootballEntities
         public string? CrestUrl { get; set; }
         public string? KitUrl { get; set; }
         public List<Player> Players { get; set; } = new List<Player>();
-        public List<Coach> Coaches { get; set; } = new List<Coach>();
+        public Coach Coach { get; set; }
         public List<Team> Teams { get; set; } = new List<Team>();
     }
 }

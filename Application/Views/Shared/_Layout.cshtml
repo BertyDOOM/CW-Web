@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using System.Security.Claims
+@using Microsoft.EntityFrameworkCore
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -24,7 +26,18 @@
                 <div class="pl-nav-wrap">
                     <ul class="main-nav">
                         <li><a class="nav-link" href="/">Home</a></li>
-                        <li><a class="nav-link" href="/Transfer/Market">Market</a></li>
+                        @if (User.Identity != null && User.Identity.IsAuthenticated)
+                        {
+                            @inject CW_Fantasy_App.Data.ApplicationDbContext _context
+
+                            int userId = int.Parse(User.FindFirstValue(System.Security.Claims.ClaimTypes.NameIdentifier));
+                            var hasTeam = _context.Teams.Any(t => t.UserId == userId);
+
+                            @if (hasTeam) 
+                            {
+                                <li><a class="nav-link" href="/Transfer/Market">Market</a></li>
+                            }
+                        }
                         <li><a class="nav-link" href="/Team/Leaderboard">FPL Leaderboard</a></li>
                     </ul>
                     <ul class="auth-nav">

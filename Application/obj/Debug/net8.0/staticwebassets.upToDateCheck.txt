@@ -1,5 +1,6 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\img\England territory.png
 wwwroot\img\Go buy card.png
 wwwroot\img\Lion logo.png
 wwwroot\img\extended pitch.png
