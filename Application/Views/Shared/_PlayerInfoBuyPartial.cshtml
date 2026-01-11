@@ -2,6 +2,7 @@
 
 <div id="player-@Model.Id" class="player-modal-overlay">
     <div class="player-modal-buy">
+
         <a href="#" class="close-modal">✕</a>
 
         <div class="modal-left">
@@ -14,46 +15,39 @@
         <div class="modal-right">
             <h2>@Model.Name</h2>
 
-            <div class="info-row"><span>Position: @Model.Position</span></div>
+            <div class="info-row">Position: @Model.Position</div>
 
             @if (Model.Nationality != null)
             {
-                <div class="info-row"><span>Nationality: @Model.Nationality</span></div>
-            }
-            @if (Model.DateOfBirth != null)
-            {
-                <div class="info-row">
-                    <span>
-                        Date of birth:
-                        @Model.DateOfBirth.Value.ToString("dd MMM yyyy")
-                    </span>
-                </div>
+                <div class="info-row">Nationality: @Model.Nationality</div>
             }
 
             @if (Model.Age != null)
             {
-                <div class="info-row"><span>Age: @Model.Age</span></div>
+                <div class="info-row">Age: @Model.Age</div>
             }
-            <div class="user-points">
-				1000 coins
+
+            <div class="info-row user-points">
+                1000 coins
             </div>
+
             <div class="info-row">
                 <span>Choose Position:</span>
+
                 <div class="starter-buttons">
-                    <button class="starter-btn" data-player-id="@Model.Id" data-pos="1">GK</button>
-                    <button class="starter-btn" data-player-id="@Model.Id" data-pos="2">Left Back</button>
-                    <button class="starter-btn" data-player-id="@Model.Id" data-pos="3">Center Def 1</button>
-                    <button class="starter-btn" data-player-id="@Model.Id" data-pos="4">Center Def 2</button>
-                    <button class="starter-btn" data-player-id="@Model.Id" data-pos="5">Right Back</button>
-                    <button class="starter-btn" data-player-id="@Model.Id" data-pos="6">Left Wing</button>
-                    <button class="starter-btn" data-player-id="@Model.Id" data-pos="7">Half 1</button>
-                    <button class="starter-btn" data-player-id="@Model.Id" data-pos="8">Half 2</button>
-                    <button class="starter-btn" data-player-id="@Model.Id" data-pos="9">Right Wing</button>
-                    <button class="starter-btn" data-player-id="@Model.Id" data-pos="10">FW 1</button>
-                    <button class="starter-btn" data-player-id="@Model.Id" data-pos="11">FW 2</button>
+                    <button class="starter-btn buy-player-btn" data-player-id="@Model.Id" data-pos="1">GK</button>
+                    <button class="starter-btn buy-player-btn" data-player-id="@Model.Id" data-pos="2">Left Back</button>
+                    <button class="starter-btn buy-player-btn" data-player-id="@Model.Id" data-pos="3">Center Def 1</button>
+                    <button class="starter-btn buy-player-btn" data-player-id="@Model.Id" data-pos="4">Center Def 2</button>
+                    <button class="starter-btn buy-player-btn" data-player-id="@Model.Id" data-pos="5">Right Back</button>
+                    <button class="starter-btn buy-player-btn" data-player-id="@Model.Id" data-pos="6">Left Wing</button>
+                    <button class="starter-btn buy-player-btn" data-player-id="@Model.Id" data-pos="7">Half 1</button>
+                    <button class="starter-btn buy-player-btn" data-player-id="@Model.Id" data-pos="8">Half 2</button>
+                    <button class="starter-btn buy-player-btn" data-player-id="@Model.Id" data-pos="9">Right Wing</button>
+                    <button class="starter-btn buy-player-btn" data-player-id="@Model.Id" data-pos="10">FW 1</button>
+                    <button class="starter-btn buy-player-btn" data-player-id="@Model.Id" data-pos="11">FW 2</button>
                 </div>
             </div>
         </div>
     </div>
 </div>
-

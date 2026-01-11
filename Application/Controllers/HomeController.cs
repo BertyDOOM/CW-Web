@@ -148,6 +148,8 @@ public class HomeController : Controller
     });
     }
 
+
+
     [HttpPost]
     public async Task<IActionResult> MakeStarter([FromBody] MakeStarterDto dto) 
     {
@@ -185,6 +187,38 @@ public class HomeController : Controller
         return Ok();
     }
 
+
+
+    [HttpPost]
+    public async Task<IActionResult> SellPlayer([FromBody] int playerId)
+    {
+        int userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
+
+        var user = await _context.Users.FindAsync(userId);
+        if (user == null) return Unauthorized();
+
+        var team = await _context.Teams
+            .Include(t => t.PlayerTeams)
+            .FirstOrDefaultAsync(t => t.UserId == userId);
+
+        if (team == null) return BadRequest("Team not found");
+
+        var playerTeam = team.PlayerTeams
+            .FirstOrDefault(pt => pt.PlayerId == playerId && !pt.IsDeleted);
+
+        if (playerTeam == null)
+            return BadRequest("Player not in team");
+
+        playerTeam.IsDeleted = true;
+        playerTeam.IsStarter = false;
+        playerTeam.SchemePosition = null;
+
+        user.Coins += 1000;
+
+        await _context.SaveChangesAsync();
+
+        return Ok(new { coins = user.Coins });
+    }
 
     public IActionResult Privacy()
     {

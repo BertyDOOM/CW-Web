@@ -28,14 +28,14 @@ public class TransferController : Controller
             .Include(t => t.Coach)
             .FirstOrDefaultAsync(t => t.UserId == userId);
 
-        var ownedPlayerIds = team?.PlayerTeams.Select(pt => pt.PlayerId).ToList() ?? new List<int>();
+        var ownedPlayerIds = team?.PlayerTeams.Where(pt => !pt.IsDeleted).Select(pt => pt.PlayerId).ToList() ?? new List<int>();
 
         var marketUserTeamVm = new MarketUserTeamViewModel
         {
             TeamId = team?.Id ?? 0,
             UserCoins = user.Coins,
-            StarterCount = team?.PlayerTeams.Count(pt => pt.IsStarter == true) ?? 0,
-            BenchCount = team?.PlayerTeams.Count(pt => pt.IsStarter != true) ?? 0,
+            StarterCount = team?.PlayerTeams.Count(pt => pt.IsStarter == true && pt.IsDeleted != true) ?? 0,
+            BenchCount = team?.PlayerTeams.Count(pt => pt.IsStarter == true && !pt.IsDeleted) ?? 0,
             OwnedPlayerIds = ownedPlayerIds,
             OwnedCoachId = team.CoachId
         };
@@ -60,7 +60,7 @@ public class TransferController : Controller
                 Age = CoachViewModel.SetAge(c.Coach.DateOfBirth)
             } : null,
             Players = c.Players
-                .Where(p => !ownedPlayerIds.Contains(p.Id)) // не показваме закупени
+                .Where(p => !ownedPlayerIds.Contains(p.Id) && !p.IsDeleted) // <- игнорирани са soft-deleted
                 .Select(p => new MarketPlayerViewModel
                 {
                     Price = 1000,
@@ -77,6 +77,7 @@ public class TransferController : Controller
                         Age = PlayerViewModel.SetAge(p.DateOfBirth)
                     }
                 }).ToList()
+
         }).ToList();
 
         var pageVm = new MarketPageViewModel

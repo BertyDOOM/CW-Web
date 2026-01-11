@@ -26,6 +26,7 @@ namespace Application.Controllers
             };
             return View(model);
         }
+
         [HttpPost] //след submit
         public async Task<IActionResult> Create(CreateTeamViewModel model)
         {
@@ -33,7 +34,7 @@ namespace Application.Controllers
             {
                 Name = model.Name,
                 UserId = Convert.ToInt32(User.FindFirstValue(ClaimTypes.NameIdentifier)),
-                FavoriteClubId = model.FavoriteClubId, //case
+                FavoriteClubId = model.FavoriteClubId,
             };
 
             _context.Teams.Add(team);

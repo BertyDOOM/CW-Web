@@ -3,6 +3,9 @@ wwwroot\favicon.ico
 wwwroot\img\England territory.png
 wwwroot\img\Go buy card.png
 wwwroot\img\Lion logo.png
+wwwroot\img\Premier League promo 2.jpg
+wwwroot\img\Premier League promo.jpg
+wwwroot\img\Site Promo.png
 wwwroot\img\extended pitch.png
 wwwroot\img\soccer-pitch.jpg
 wwwroot\img\soccerpitch.jpg

@@ -1,4 +1,4 @@
-﻿@using Entities.ViewModels
+﻿﻿@using Entities.ViewModels
 @model UserTeamViewModel
 @{
     ViewData["Title"] = "My Fantasy Team";
@@ -48,7 +48,8 @@
                         </div>
                         @await Html.PartialAsync("_PlayerInfoPartial", p)
                     }
-                }else
+                }
+                else
                 {
                     <div class="empty-card"></div>
                 }
@@ -61,18 +62,19 @@
                     .ToDictionary(p => p.SchemePosition.Value) ?? new Dictionary<int, PlayerViewModel>();
                 }
                 @for (int i = 2; i <= 5; i++)
-                {   if (Def.ContainsKey(i))
+                {
+                    if (Def.ContainsKey(i))
                     {
-					PlayerViewModel p = Def[i];
-                    <div class="player-card" draggable="true" data-player-id="@p.Id">
-                        <img src="@p.KitUrl" />
-                        <a href="#player-@p.Id" class="player-name">@p.Name</a>
-                    </div>
+                        PlayerViewModel p = Def[i];
+                        <div class="player-card" draggable="true" data-player-id="@p.Id">
+                            <img src="@p.KitUrl" />
+                            <a href="#player-@p.Id" class="player-name">@p.Name</a>
+                        </div>
                         @await Html.PartialAsync("_PlayerInfoPartial", p)
                     }
                     else
                     {
-				        <div class="empty-card"></div>
+                        <div class="empty-card"></div>
                     }
                 }
             </div>
@@ -124,22 +126,22 @@
             </div>
 
 
-			<div class="bench">
-                 @if (Model.Coach != null)
-                 {
-                 <div class="coach-card">
-                     <img src="~/img/trainee Kit.png" />
-                     <a href="#coach-@Model.Coach.Id" class="player-name">@Model.Coach.Name</a>
+            <div class="bench">
+                @if (Model.Coach != null)
+                {
+                    <div class="coach-card">
+                        <img src="~/img/trainee Kit.png" />
+                        <a href="#coach-@Model.Coach.Id" class="player-name">@Model.Coach.Name</a>
                         @await Html.PartialAsync("_CoachInfoPartial", Model.Coach)
-                 </div>
-                 }
-                 else
-                 {
+                    </div>
+                }
+                else
+                {
                     <div class="empty-card"></div>
-                 }
-                 <div class="bench-select-wrapper">
+                }
+                <div class="bench-select-wrapper">
                     <label for="bench-select" style="color:white; font-weight:500;">Bench:</label>
-                    <select id="bench-select" name="bench-player" 
+                    <select id="bench-select" name="bench-player"
                             style="width:100%; padding:4px; border-radius:4px; margin-top:4px;"
                             onchange="if(this.value) location.href='#player-'+this.value">
                         @if (Model.BenchPlayers.Any())
@@ -148,16 +150,16 @@
                             @foreach (var p in Model.BenchPlayers)
                             {
                                 <option value="@p.Id">@p.Name</option>
-                            
-                           
+
+
                             }
-                            
+
                         }
                         else
                         {
-                        <option value="">No bench players</option>
+                            <option value="">No bench players</option>
                         }
-                        
+
                     </select>
                     @foreach (var p in Model.BenchPlayers)
                     {
@@ -165,11 +167,11 @@
                     }
                 </div>
             </div>
-                
-                
-             
-			</div>
+
+
+
         </div>
+    </div>
     <div class="grid-div territory-card">
         <div class="territory-image">
             <img src="~/img/England territory.png" alt="England territory" />

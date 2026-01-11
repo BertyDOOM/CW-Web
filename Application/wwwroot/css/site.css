@@ -90,10 +90,18 @@ body {
     transition: color 0.2s ease, background-color 0.2s ease;
 }
 
+
+
     .pl-navbar .nav-link.log-regi {
         border: 2px solid white;
         border-radius: 4px;
     }
+
+.pl-navbar .nav-link.actual-regi {
+    border: 2px solid white;
+    border-radius: 4px;
+    margin-left: 8px;
+}
 
     .pl-navbar .nav-link:hover {
         color: rgb(55, 0, 60);
@@ -429,7 +437,7 @@ INFO PARTIAL VIEWS
     grid-template-columns: 1fr 1.5fr;
     width: 500px;
     max-width: 90%;
-    height: 220px;
+    height: 270px;
     background-color: transparent;
     padding: 0;
     position: relative;
@@ -524,7 +532,9 @@ INFO PARTIAL VIEWS
     gap: 5px;
     margin-top: 5px;
 }
-
+.buy-player-btn,
+.sell-player-btn,
+.recruit-coach-btn,
 .starter-btn {
     padding: 4px 6px;
     font-size: 0.8rem;
@@ -534,7 +544,9 @@ INFO PARTIAL VIEWS
     background-color: #37003C;
     color: white;
 }
-
+    .buy-player-btn:hover,
+    .sell-player-btn:hover,
+    .recruit-coach-btn:hover,
     .starter-btn:hover {
         background-color: #00cd84;
     }
@@ -590,4 +602,56 @@ INFO PARTIAL VIEWS
 /*
 MARKET VIEW
 */
+
+.welcome-screen-img {
+    background-image: url('/img/Premier League promo 2.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 120vh;
+    position: relative;
+    border-bottom: 1px solid grey;
+}
+
+.welcome-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55); /* прозрачност на снимката */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+    /* Заглавие */
+    .welcome-overlay h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        margin-bottom: 25px;
+    }
+
+/* Контейнер за бутоните */
+.welcome-actions {
+    display: flex;
+    gap: 15px;
+}
+
+/* Бутоните */
+.welcome-btn {
+    padding: 10px 18px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+    background-color: #37003C;
+    color: white;
+    transition: background 0.2s, transform 0.15s;
+}
+
+    .welcome-btn:hover {
+        background-color: #00cd84;
+        transform: translateY(-2px);
+    }
 

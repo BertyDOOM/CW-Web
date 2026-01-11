@@ -5,39 +5,91 @@
 
         <a href="#" class="close-modal">✕</a>
 
-        <!-- Лява половина: снимка + клуб -->
         <div class="modal-left">
             <div class="player-image-wrapper">
                 <img src="@Model.KitUrl" class="player-kit" />
-                
-                 @* <img src="@Model.ClubUrl" class="club-logo" />  *@
             </div>
         </div>
 
-        <!-- Дясна половина: данни -->
         <div class="modal-right">
             <h2>@Model.Name</h2>
 
-            <div class="info-row"><span>Position: @Model.Position</span></div>
+            <div class="info-row">Position: @Model.Position</div>
 
             @if (Model.Nationality != null)
             {
-                <div class="info-row"><span>Nationality: @Model.Nationality</span></div>
+                <div class="info-row">Nationality: @Model.Nationality</div>
             }
 
             @if (Model.DateOfBirth != null)
             {
                 <div class="info-row">
-                    <span>Date of birth:
-                    @Model.DateOfBirth.Value.ToString("dd MMM yyyy")</span>
+                    Date of birth: @Model.DateOfBirth.Value.ToString("dd MMM yyyy")
                 </div>
             }
 
             @if (Model.Age != null)
             {
-                <div class="info-row"><span>Age: @Model.Age</span></div>
+                <div class="info-row">Age: @Model.Age</div>
             }
-        </div>
 
+            <div class="info-row">
+                <button class="starter-btn sell-player-btn" data-player-id="@Model.Id">Sell Player</button>
+            </div>
+        </div>
     </div>
 </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        const sellButtons = document.querySelectorAll(".sell-player-btn");
+
+        sellButtons.forEach(btn => {
+            btn.addEventListener("click", async function(e) {
+                e.preventDefault();
+
+                const playerId = parseInt(this.dataset.playerId);
+                if(!playerId) return;
+
+                try {
+                    const res = await fetch("/Home/SellPlayer", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                            "RequestVerificationToken": document.querySelector('input[name="__RequestVerificationToken"]')?.value
+                        },
+                        body: JSON.stringify(playerId)
+                    });
+
+                    if(!res.ok){
+                        const text = await res.text();
+                        alert("Error: " + text);
+                        return;
+                    }
+
+                    const data = await res.json();
+                    console.log("Player sold:", data);
+
+                    // 1️⃣ Затваряне на модала
+                    const modal = document.getElementById(`player-${playerId}`);
+                    if(modal) modal.remove();
+
+                    // 2️⃣ Премахване на реда от списъка
+                    const row = document.querySelector(`.market-row-simple[href="#player-${playerId}"]`);
+                    if(row) row.remove();
+
+                    // 3️⃣ Обновяване на монетите
+                    const coinsDiv = document.querySelector(".user-points");
+                    if(coinsDiv) coinsDiv.textContent = data.coins + " coins";
+
+                } catch(err) {
+                    console.error(err);
+                    alert("Something went wrong while selling the player");
+                }
+
+            });
+        });
+
+    });
+</script>

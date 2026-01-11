@@ -1,4 +1,4 @@
-﻿@using Entities.ViewModels
+﻿﻿@using Entities.ViewModels
 @model MarketPageViewModel
 @{
 }
@@ -12,33 +12,33 @@
 
         @if (Model.UserTeam.OwnedCoachId == null)
         {
-          <h2 class="market-title">Coaches</h2>
+            <h2 class="market-title">Coaches</h2>
 
             <div class="market-list">
-            @foreach (var club in Model.Clubs.Where(c => c.Coach != null))
-            {
-                <a href="#coach-@club.Coach.Id" class="market-row-simple coach-row-simple">
+                @foreach (var club in Model.Clubs.Where(c => c.Coach != null))
+                {
+                    <a href="#coach-@club.Coach.Id" class="market-row-simple coach-row-simple">
 
-                    <div class="club-logo-simple">
-                        <img src="@club.Coach.ClubUrl" />
-                    </div>
+                        <div class="club-logo-simple">
+                            <img src="@club.Coach.ClubUrl" />
+                        </div>
 
-                    <div class="player-info-simple">
-                        <div class="player-name-simple">@club.Coach.Name</div>
-                        <div class="player-pos-simple">Coach</div>
-                    </div>
+                        <div class="player-info-simple">
+                            <div class="player-name-simple">@club.Coach.Name</div>
+                            <div class="player-pos-simple">Coach</div>
+                        </div>
 
-                    <div class="player-price-simple">
-                        0 coins
-                    </div>
+                        <div class="player-price-simple">
+                            0 coins
+                        </div>
 
-                </a>
+                    </a>
 
-                @await Html.PartialAsync("_CoachInfoRecruitPartial", club.Coach)
-            }
-        </div>  
+                    @await Html.PartialAsync("_CoachInfoRecruitPartial", club.Coach)
+                }
+            </div>
         }
-        
+
 
         <h2 class="market-title">Players</h2>
 
@@ -64,13 +64,13 @@
 
                     </a>
 
-                     @await Html.PartialAsync("_PlayerInfoBuyPartial", mp.Info) 
+                    @await Html.PartialAsync("_PlayerInfoBuyPartial", mp.Info)
                 }
             }
         </div>
     </div>
 
-    <div></div> 
+    <div></div>
 </div>
 
 <style>
@@ -89,8 +89,8 @@
     }
 
     .market-title {
-		margin: 10px 0;
-		    font-size: 1.4rem;
+        margin: 10px 0;
+        font-size: 1.4rem;
         font-weight: 700;
         color: #37003C;
     }
@@ -109,7 +109,7 @@
         align-items: center;
         height: 55px;
         padding: 0px 6px 10px 6px;
-		background: rgb(100, 220, 210);
+        background: rgb(100, 220, 210);
         border-radius: 6px;
         text-decoration: none;
         color: inherit;
@@ -136,7 +136,7 @@
         font-weight: 700;
         font-size: 0.85rem;
         color: #00cd84;
-        line-height: 30px; 
+        line-height: 30px;
     }
 
     /* LOGO */
@@ -183,8 +183,8 @@
 </style>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const buyButtons = document.querySelectorAll(".starter-btn");
+    document.addEventListener("DOMContentLoaded", function () {
+        const buyButtons = document.querySelectorAll(".buy-player-btn");
 
         buyButtons.forEach(btn => {
             btn.addEventListener("click", async function(e) {
@@ -192,7 +192,9 @@
 
                 const playerId = parseInt(this.dataset.playerId);
                 const pos = parseInt(this.dataset.pos);
-                const price = 1000; // можеш да вземеш динамично от реда
+                const price = 1000; // може да се вземе динамично
+
+                if (!playerId || !pos) return;
 
                 try {
                     const res = await fetch("/Transfer/BuyPlayer", {
@@ -213,23 +215,27 @@
                     const data = await res.json();
                     console.log("Player bought:", data);
 
-                    // Обновяване на UI
-                    alert("Bought Player! " + (data.isStarter ? "He is now starter." : "He is on bench."));
+                    // 1️⃣ Показваме известие за позицията
+                    const message = data.isStarter
+                        ? "Bought Player! He is now starter."
+                        : "Bought Player! He is on bench.";
+                    alert(message);
 
-                    // Маркираме бутона като активен, ако е starter
-                    if(data.isStarter) {
-                        document.querySelectorAll(`.starter-btn[data-player-id="${playerId}"]`)
-                            .forEach(b => b.classList.remove("active"));
-                        this.classList.add("active");
-                    }
+                    // 2️⃣ Затваряме модала
+                    const modal = document.getElementById(`player-${playerId}`);
+                    if(modal) modal.remove();
 
-                    // Обновяване на монетите на потребителя
+                    // 3️⃣ Премахваме реда от Market
+                    const row = document.querySelector(`.market-row-simple[href="#player-${playerId}"]`);
+                    if(row) row.remove();
+
+                    // 4️⃣ Обновяване на монетите
                     const coinsDiv = document.querySelector(".user-points");
                     if (coinsDiv) coinsDiv.textContent = data.newCoins + " coins";
 
-                } catch (err) {
+                } catch(err) {
                     console.error(err);
-                    alert("Error with buying.");
+                    alert("Something went wrong while buying the player");
                 }
             });
         });
